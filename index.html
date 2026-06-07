@@ -1169,13 +1169,27 @@
     .hero .container { width: 100%; }
     .hero h1 { font-size: 36px; line-height: 1.4; }
     .hero-img { width: 100%; }
-    .hero-img img { object-position: right 12%; opacity: 0.45; max-width: none; margin: 0; }
+    .hero-img img {
+      object-position: 60% 18%;
+      opacity: 0.78;
+      max-width: none;
+      margin: 0;
+    }
     .hero-img::before {
       background: linear-gradient(180deg,
         var(--navy-deep) 0%,
-        rgba(16, 37, 66, 0.85) 30%,
-        rgba(16, 37, 66, 0.7) 65%,
+        rgba(16, 37, 66, 0.72) 22%,
+        rgba(16, 37, 66, 0.35) 45%,
+        rgba(8, 26, 48, 0.4) 75%,
         var(--navy-deep) 100%);
+    }
+    .hero-img::after {
+      background:
+        linear-gradient(180deg,
+          rgba(8, 26, 48, 0.5) 0%,
+          transparent 18%,
+          transparent 75%,
+          rgba(8, 26, 48, 0.55) 100%);
     }
     .hero-text { max-width: 100%; }
     .hero-deco-vertical { display: none; }
@@ -1199,6 +1213,20 @@
   }
 
   @media (max-width: 600px) {
+    /* Hero写真：本人の顔が見えるよう調整 */
+    .hero-img img {
+      object-position: 62% 20%;
+      opacity: 0.82;
+    }
+    .hero-img::before {
+      background: linear-gradient(180deg,
+        var(--navy-deep) 0%,
+        rgba(16, 37, 66, 0.78) 18%,
+        rgba(16, 37, 66, 0.42) 40%,
+        rgba(8, 26, 48, 0.45) 75%,
+        var(--navy-deep) 100%);
+    }
+
     /* ロゴ縮小 */
     .logo {
       font-size: 16px;
