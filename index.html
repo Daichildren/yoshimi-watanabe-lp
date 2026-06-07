@@ -345,6 +345,62 @@
     border-right: none;
     margin-right: 0;
   }
+
+  /* Hero 数字バッジ */
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(184, 150, 76, 0.25);
+  }
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-stat-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: 0;
+  }
+  .hero-stat-suffix {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    color: var(--gold-light);
+    margin-left: 4px;
+    margin-right: 8px;
+    font-weight: 700;
+    line-height: 1;
+    align-self: flex-end;
+    margin-bottom: 8px;
+  }
+  .hero-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .hero-stat-label {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 11px;
+    color: #d6d2c8;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 500;
+    flex-basis: 100%;
+    margin-top: 4px;
+  }
+  @media (max-width: 600px) {
+    .hero-stats { gap: 20px; }
+    .hero-stat-num { font-size: 36px !important; }
+    .hero-stat-suffix { font-size: 14px; }
+    .hero-stat-label { font-size: 10px; }
+  }
   .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
   .btn {
     display: inline-block;
@@ -442,15 +498,27 @@
     color: var(--gold);
     font-size: 12px;
     letter-spacing: 6px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     font-weight: 600;
     font-family: 'Noto Serif JP', serif;
+    position: relative;
   }
   .section-tag::before {
     content: '';
     width: 32px;
     height: 1px;
     background: var(--gold);
+    position: relative;
+  }
+  .section-tag::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    margin-left: -8px;
+    box-shadow: 0 0 0 3px rgba(184, 150, 76, 0.2);
   }
   .section-title {
     font-family: 'Noto Serif JP', serif;
@@ -1331,6 +1399,87 @@
     .hero h1 { font-size: 26px; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://watanabe-yoshimi.com/#person",
+      "name": "渡辺 喜美",
+      "alternateName": ["Yoshimi Watanabe", "ワタナベ ヨシミ"],
+      "url": "https://watanabe-yoshimi.com",
+      "image": "https://watanabe-yoshimi.com/images/yoshimi_hero.jpg",
+      "jobTitle": ["元金融担当大臣", "元行政改革担当大臣", "元規制改革担当大臣", "みんなの党 創設者"],
+      "description": "元金融担当大臣・元行政改革担当大臣として政策決定の中枢を経験。政界引退後は経営者向けに政策・規制動向の解説・助言を提供。JBpress連載中。",
+      "birthDate": "1952-03-17",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "栃木県",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "JP",
+          "addressRegion": "栃木県"
+        }
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "日本"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "早稲田大学政治経済学部"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "中央大学法学部"
+        }
+      ],
+      "knowsAbout": [
+        "金融政策",
+        "行政改革",
+        "規制改革",
+        "公務員制度改革",
+        "中央銀行論",
+        "政策動向分析"
+      ],
+      "sameAs": [
+        "https://x.com/WTNBYSM443",
+        "https://note.com/yoshimi_watanabe",
+        "https://substack.com/@yoshimiwatanabe",
+        "https://jbpress.ismedia.jp/search/author/%E6%B8%A1%E8%BE%BA+%E5%96%9C%E7%BE%8E",
+        "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E5%96%9C%E7%BE%8E"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://watanabe-yoshimi.com/#website",
+      "url": "https://watanabe-yoshimi.com",
+      "name": "渡辺喜美 公式サイト",
+      "description": "元金融担当大臣・元行政改革担当大臣 渡辺喜美の公式サイト。企業顧問・アドバイザリー・講演・寄稿のご依頼はこちら。",
+      "publisher": {
+        "@id": "https://watanabe-yoshimi.com/#person"
+      },
+      "inLanguage": "ja-JP"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://watanabe-yoshimi.com/#service",
+      "name": "渡辺喜美 政策アドバイザリーサービス",
+      "description": "経営者・幹部層向けの政策・規制動向の解説、経営判断のセカンドオピニオン、社内勉強会、講演・基調講演、寄稿等のサービスを提供。",
+      "provider": {
+        "@id": "https://watanabe-yoshimi.com/#person"
+      },
+      "serviceType": ["政策アドバイザリー", "顧問契約", "講演", "寄稿"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "日本"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1374,6 +1523,23 @@
       <p class="hero-sub">
         元金融担当大臣・元行政改革担当大臣として政策決定の中枢を経験した渡辺喜美が、政策・規制動向を経営者の視点で解説・助言します。
       </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="19">0</span>
+          <span class="hero-stat-suffix">本</span>
+          <span class="hero-stat-label">JBpress<br>連載寄稿</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="6">0</span>
+          <span class="hero-stat-suffix">期</span>
+          <span class="hero-stat-label">衆議院議員<br>連続当選</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="26">0</span>
+          <span class="hero-stat-suffix">年</span>
+          <span class="hero-stat-label">国会議員<br>在職年数</span>
+        </div>
+      </div>
       <div class="hero-credentials">
         <span>元 金融担当大臣</span>
         <span>元 行政改革担当大臣</span>
@@ -1534,7 +1700,7 @@
 <section class="issue">
   <div class="container">
     <span class="section-tag">FOR THESE CHALLENGES</span>
-    <h2 class="section-title">こんな経営課題に、応えます。</h2>
+    <h2 class="section-title">こんな悩み、ありませんか？</h2>
     <p class="section-lead">
       規制業種・新規事業・M&A・上場準備・政策渉外。<br>
       "政策の風向き"が経営判断を左右するすべての場面でお力になれます。
@@ -1551,7 +1717,7 @@
             <path d="M7 21h10"/>
           </svg>
         </div>
-        <h4>規制業種への政策的視点</h4>
+        <h4>規制業界、これからどう動く？</h4>
         <p>金融・医療・エネルギー・通信・モビリティなど、規制業種における政策動向と当局対応について、経験者視点での解説・助言。</p>
       </div>
       <div class="issue-item">
@@ -1568,7 +1734,7 @@
             <path d="M7.76 7.76L6.34 6.34"/>
           </svg>
         </div>
-        <h4>政策動向の早期察知</h4>
+        <h4>いま動いてる政策、自社にどう効く？</h4>
         <p>党内議論・審議会・概算要求の段階で、自社事業に影響する政策の"芽"について、政界・霞が関を知る経験者視点での解説。</p>
       </div>
       <div class="issue-item">
@@ -1579,7 +1745,7 @@
             <path d="M8 13h5"/>
           </svg>
         </div>
-        <h4>経営層に向けた政策解説</h4>
+        <h4>ニュースの裏側、本当はどうなってる？</h4>
         <p>難解な政策ニュース・規制動向を、経営陣・幹部層向けに分かりやすく解説。「ニュースの本当の意味」を翻訳します。</p>
       </div>
       <div class="issue-item">
@@ -1589,7 +1755,7 @@
             <polyline points="16 7 22 7 22 13"/>
           </svg>
         </div>
-        <h4>新規事業の政策リスク把握</h4>
+        <h4>新規事業、政策リスクは大丈夫？</h4>
         <p>新規市場参入や事業展開を検討する際の規制リスク・政策リスクについて、経験者視点での助言・コメント。</p>
       </div>
       <div class="issue-item">
@@ -1601,7 +1767,7 @@
             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
         </div>
-        <h4>経営層への政策アドバイザリー</h4>
+        <h4>経営判断に政策の知見が欲しい</h4>
         <p>経営陣・幹部層に向けた政策動向・規制動向のインプット提供、戦略会議への参加・助言。</p>
       </div>
       <div class="issue-item">
@@ -1611,7 +1777,7 @@
             <path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
         </div>
-        <h4>役員研修・社内勉強会</h4>
+        <h4>幹部に政策リテラシーをつけたい</h4>
         <p>経営陣・幹部層向けの政策リテラシー研修、社内勉強会への登壇（半日〜1日）。戦略討議のファシリテーション。</p>
       </div>
     </div>
@@ -2362,34 +2528,6 @@
           <p>チャンネルくらら「渡辺喜美 現代政治」シリーズ。戦時体制・55年体制・現代日本の構造的課題を読み解く解説シリーズ。</p>
         </div>
       </a>
-      <a href="https://www.gstrategy.jp/blog/2108/" target="_blank" rel="noopener" class="media-thumb-card">
-        <div class="media-thumb-img media-thumb-placeholder gradient-navy">
-          <span class="placeholder-title">GRAND<br>STRATEGY</span>
-          <span class="placeholder-sub">EPISODE #154</span>
-        </div>
-        <div class="media-thumb-info">
-          <div class="media-thumb-meta">
-            <span class="media-thumb-tag tag-yt">グランドストラテジー</span>
-            <span class="media-thumb-date">出演</span>
-          </div>
-          <h4>「日本の現代政治を考える」第154回</h4>
-          <p>日本の戦略・経済政策・現代政治について深掘り対談。長尺の本格議論シリーズ。</p>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/results?search_query=%E6%B8%A1%E8%BE%BA%E5%96%9C%E7%BE%8E+%E3%83%86%E3%83%AC%E6%9D%B1%E5%A4%A7%E5%AD%A6" target="_blank" rel="noopener" class="media-thumb-card">
-        <div class="media-thumb-img media-thumb-placeholder gradient-mix">
-          <span class="placeholder-title">テレ東大学</span>
-          <span class="placeholder-sub">w/ 成田悠輔 · ひろゆき</span>
-        </div>
-        <div class="media-thumb-info">
-          <div class="media-thumb-meta">
-            <span class="media-thumb-tag tag-tv">テレビ東京</span>
-            <span class="media-thumb-date">特別回</span>
-          </div>
-          <h4>「テレ東大学」対談出演</h4>
-          <p>成田悠輔氏・ひろゆき氏との対談に登場。政界復帰を打診される場面も話題に。</p>
-        </div>
-      </a>
       <a href="https://txbiz.tv-tokyo.co.jp/cambria/" target="_blank" rel="noopener" class="media-thumb-card">
         <div class="media-thumb-img media-thumb-placeholder gradient-gold">
           <span class="placeholder-mark">TX</span>
@@ -2834,49 +2972,49 @@
       <details class="faq-item">
         <summary>講演料金はいくらですか？</summary>
         <div class="faq-answer">
-          講演テーマ・時間・対象規模・開催場所により個別にお見積もりをご提示いたします。基調講演（60〜90分）、役員研修（半日〜2日）、対談・パネル登壇など、各種形態に対応可能です。
+          テーマ・時間・対象規模・場所により個別お見積もり。基調講演・役員研修・パネル登壇等、各種形態に対応します。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>対応エリアはどこまでですか？</summary>
         <div class="faq-answer">
-          東京都内を中心に対面でのご対応を承っております。地方・海外につきましては、原則オンライン（Zoom等）でのご対応となります。海外開催のカンファレンス等への対面登壇は、個別にご相談に応じます。
+          都内を中心に対面対応、地方・海外はオンライン（Zoom等）が中心。海外カンファレンスへの対面登壇は別途ご相談ください。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>契約期間の縛りはありますか？</summary>
         <div class="faq-answer">
-          月額顧問契約は、原則3ヶ月〜の継続契約を推奨しております。ただし、貴社のフェーズや課題の性質に応じて、契約期間・関与度を柔軟にご相談いたします。
+          原則3ヶ月〜の継続契約を推奨。貴社のフェーズ・課題に応じて柔軟に対応します。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>業界・業種に制限はありますか？</summary>
         <div class="faq-answer">
-          規制業種（金融・医療・エネルギー・通信・モビリティ等）を中心に幅広い業種にご対応可能です。ただし、競合関係・利益相反関係にある複数社の同時受任はお断りする場合がございます。
+          規制業種（金融・医療・エネルギー・通信・モビリティ等）中心に幅広く対応。ただし、競合関係・利益相反となる複数社の同時受任はお断りすることがあります。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>機密保持（NDA）はどのように扱われますか？</summary>
         <div class="faq-answer">
-          案件性質・関与範囲に応じて、貴社にて運用されている機密保持契約（NDA）の雛形でのご締結をお願いしております。雛形がない場合は個別にご相談ください。お問い合わせ段階の情報も含め、厳格に管理し、外部に共有することはございません。
+          貴社のNDA雛形でのご締結をお願いしています。雛形がない場合は個別ご相談ください。お問い合わせ段階の情報も含め、外部共有は一切ありません。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>政治家への口利き・斡旋はお願いできますか？</summary>
         <div class="faq-answer">
-          政治家・行政機関への個別の働きかけ・口利き・斡旋は、いかなる形でも一切お受けしておりません。あくまで政策動向の解説、経営戦略への翻訳、公的な対話設計の助言にとどまります。
+          政治家・行政機関への働きかけ・口利き・斡旋は一切お受けしていません。政策動向の解説、経営戦略への翻訳、対話設計の助言に限ります。
         </div>
       </details>
 
       <details class="faq-item">
         <summary>取材・メディア出演の依頼はできますか？</summary>
         <div class="faq-answer">
-          ビジネス誌・経済誌・テレビ・YouTube番組等への取材、対談、コメント取材、寄稿のご依頼を承っております。お問い合わせフォームより内容・媒体・締切等をお知らせください。
+          取材・対談・コメント・寄稿のご依頼を承ります。お問い合わせフォームから内容・媒体・締切をお知らせください。
         </div>
       </details>
     </div>
@@ -3511,6 +3649,39 @@
 </footer>
 
 <script>
+  // ===== Number Count-up Animation =====
+  (function() {
+    var nums = document.querySelectorAll('.hero-stat-num[data-target]');
+    if (!nums.length) return;
+    function animateCount(el) {
+      var target = parseInt(el.dataset.target, 10);
+      var duration = 1400;
+      var start = performance.now();
+      function step(now) {
+        var p = Math.min((now - start) / duration, 1);
+        // easeOutCubic
+        var ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(target * ease);
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      nums.forEach(function(n) { io.observe(n); });
+    } else {
+      nums.forEach(animateCount);
+    }
+  })();
+
   // ===== Scroll Reveal Animation =====
   (function() {
     var revealSelectors = '.section-tag, .section-title, .section-lead, .value-card, .issue-item, .plan-card, .service-sub, .media-thumb-card, .app-category, .media-card, .faq-item, .process-step, .article-card, .app-sub-heading, .quote-banner, .service-photo-banner, .plans-heading, .plans-lead, .plans-note, .other-heading, .other-lead, .expectation-note, .articles-header, .articles-count, .career-list, .clips-note, .profile-photo, .profile-text';
