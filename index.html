@@ -1199,13 +1199,90 @@
   }
 
   @media (max-width: 600px) {
-    nav ul li:not(:last-child) { display: none; }
-    .hero h1 { font-size: 28px; }
-    .hero-sub { font-size: 15px; }
+    /* ロゴ縮小 */
+    .logo {
+      font-size: 16px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+    .logo span { font-size: 9px; letter-spacing: 2px; margin-left: 6px; }
+
+    /* ヘッダー: テキストメニュー(li内のaがnav-sns/nav-ctaクラスを持たないもの)は非表示・SNSアイコンと「ご相談」は維持 */
+    nav ul {
+      gap: 8px;
+      align-items: center;
+    }
+    nav ul li:has(a:not(.nav-sns):not(.nav-cta)) { display: none; }
+
+    /* ご相談ボタン: 縦書き化を防ぐ */
+    .nav-cta {
+      white-space: nowrap;
+      padding: 8px 12px;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* SNSアイコン縮小 */
+    .nav-sns {
+      width: 30px;
+      height: 30px;
+    }
+    .nav-x, .nav-note { font-size: 14px; }
+    .nav-substack svg { width: 11px; height: 12px; }
+
+    /* Hero h1 サイズ調整 */
+    .hero h1 {
+      font-size: 30px;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+    .hero h1 .accent {
+      padding: 0 4px;
+      white-space: normal;
+    }
+    .hero-tag {
+      font-size: 10px;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+    .hero-tag::before { width: 28px; }
+    .hero-sub {
+      font-size: 14.5px;
+      line-height: 2;
+      padding-left: 16px;
+      margin-bottom: 32px;
+    }
+    .hero-credentials span {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* CTAボタン縦並び */
+    .cta-row { flex-direction: column; gap: 10px; }
+    .cta-row .btn {
+      width: 100%;
+      padding: 14px 24px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* container余白縮小 */
+    header .container { padding: 0 16px; }
+    .container { padding: 0 16px; }
+
     .section-title { font-size: 24px; }
     .section-lead { font-size: 15px; }
     .process-steps { grid-template-columns: 1fr; }
     .career-list li { grid-template-columns: 80px 1fr; font-size: 13.5px; }
+  }
+
+  /* さらに狭い画面（iPhone SE等）対応 */
+  @media (max-width: 380px) {
+    .logo { font-size: 14px; }
+    .logo span { display: none; }
+    .nav-cta { padding: 7px 10px; font-size: 10px; }
+    .nav-sns { width: 28px; height: 28px; }
+    .hero h1 { font-size: 26px; }
   }
 </style>
 </head>
