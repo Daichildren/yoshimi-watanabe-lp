@@ -1170,26 +1170,36 @@
     .hero h1 { font-size: 36px; line-height: 1.4; }
     .hero-img { width: 100%; }
     .hero-img img {
-      object-position: 60% 18%;
-      opacity: 0.78;
+      object-position: 50% 22%;
+      opacity: 0.95;
       max-width: none;
       margin: 0;
     }
     .hero-img::before {
       background: linear-gradient(180deg,
         var(--navy-deep) 0%,
-        rgba(16, 37, 66, 0.72) 22%,
-        rgba(16, 37, 66, 0.35) 45%,
-        rgba(8, 26, 48, 0.4) 75%,
-        var(--navy-deep) 100%);
+        rgba(16, 37, 66, 0.45) 12%,
+        rgba(16, 37, 66, 0.15) 35%,
+        rgba(8, 26, 48, 0.2) 70%,
+        rgba(8, 26, 48, 0.85) 100%);
     }
     .hero-img::after {
       background:
         linear-gradient(180deg,
-          rgba(8, 26, 48, 0.5) 0%,
-          transparent 18%,
-          transparent 75%,
-          rgba(8, 26, 48, 0.55) 100%);
+          rgba(8, 26, 48, 0.4) 0%,
+          transparent 15%,
+          transparent 85%,
+          rgba(8, 26, 48, 0.7) 100%);
+    }
+    /* テキストを写真の上で読めるよう text-shadow */
+    .hero-text > * {
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+    .hero-sub {
+      background: rgba(8, 26, 48, 0.35);
+      padding: 16px 16px 16px 20px;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
     }
     .hero-text { max-width: 100%; }
     .hero-deco-vertical { display: none; }
@@ -1213,18 +1223,26 @@
   }
 
   @media (max-width: 600px) {
-    /* Hero写真：本人の顔が見えるよう調整 */
+    /* Hero写真：本人の顔がしっかり見えるよう調整 */
     .hero-img img {
-      object-position: 62% 20%;
-      opacity: 0.82;
+      object-position: 50% 25%;
+      opacity: 1;
     }
     .hero-img::before {
       background: linear-gradient(180deg,
         var(--navy-deep) 0%,
-        rgba(16, 37, 66, 0.78) 18%,
-        rgba(16, 37, 66, 0.42) 40%,
-        rgba(8, 26, 48, 0.45) 75%,
-        var(--navy-deep) 100%);
+        rgba(16, 37, 66, 0.4) 10%,
+        rgba(16, 37, 66, 0.1) 30%,
+        rgba(8, 26, 48, 0.15) 60%,
+        rgba(8, 26, 48, 0.9) 100%);
+    }
+    .hero-img::after {
+      background:
+        linear-gradient(180deg,
+          rgba(8, 26, 48, 0.3) 0%,
+          transparent 12%,
+          transparent 88%,
+          rgba(8, 26, 48, 0.7) 100%);
     }
 
     /* ロゴ縮小 */
