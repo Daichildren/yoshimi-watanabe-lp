@@ -1,0 +1,38 @@
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ===== Dependencies (将来Node使う場合用) =====
+node_modules/
+package-lock.json
+yarn.lock
+
+# ===== Build / Output =====
+dist/
+build/
+.cache/
+
+# ===== Environment =====
+.env
+.env.local
+.env.*.local
+
+# ===== その他 =====
+tmp/
+temp/

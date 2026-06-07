@@ -1,0 +1,3463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="元金融担当大臣・元行政改革担当大臣 渡辺喜美。規制と政策の"中身"を経営判断に。企業顧問・アドバイザリー・講演・寄稿のご依頼を承ります。">
+<meta property="og:title" content="渡辺喜美 公式｜元金融担当大臣・行政改革のプロが経営判断に伴走">
+<meta property="og:description" content="元金融担当大臣・元行政改革担当大臣 渡辺喜美。規制・政策の"中身"を経営者の実利目線で翻訳。月額顧問・アドバイザリーボード・講演・寄稿のご依頼はこちら。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/yoshimi_hero.jpg">
+<title>渡辺喜美 公式｜元金融担当大臣・行政改革のプロが経営判断に伴走</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #102542;
+    --navy-deep: #081a30;
+    --gold: #b8964c;
+    --gold-light: #d4b87a;
+    --cream: #faf7f0;
+    --gray-100: #f5f3ee;
+    --gray-300: #d6d2c8;
+    --gray-600: #5c5851;
+    --text: #1a1a1a;
+    --text-soft: #4a4a4a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  /* ===== Scroll Reveal Animation ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-fade {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  .reveal-fade.is-visible { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal-fade { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* Hero内テキストの初期アニメ */
+  .hero-text > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-text .hero-tag { animation-delay: 0.1s; }
+  .hero-text h1 { animation-delay: 0.25s; }
+  .hero-text .hero-sub { animation-delay: 0.45s; }
+  .hero-text .hero-credentials { animation-delay: 0.6s; }
+  .hero-text .cta-row { animation-delay: 0.75s; }
+  @keyframes heroIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Hero写真のKen Burns効果（ゆっくり拡大） */
+  .hero-img img {
+    animation: kenburns 20s ease-in-out infinite alternate;
+  }
+  @keyframes kenburns {
+    0%   { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.08) translate(-1%, -1%); }
+  }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text);
+    line-height: 1.8;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .serif { font-family: 'Noto Serif JP', serif; }
+
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ===== Header ===== */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(16, 37, 66, 0.96);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(184, 150, 76, 0.3);
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .logo span { color: var(--gold-light); font-size: 14px; margin-left: 8px; letter-spacing: 4px; }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+  nav a:hover { color: var(--gold-light); }
+  .nav-cta {
+    background: var(--gold);
+    color: #fff !important;
+    padding: 10px 22px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+  .nav-cta:hover { background: var(--gold-light); color: #fff !important; }
+  .nav-sns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(184, 150, 76, 0.5);
+    border-radius: 50%;
+    color: var(--gold-light) !important;
+    transition: all 0.3s;
+    line-height: 1;
+  }
+  .nav-sns:hover {
+    background: var(--gold);
+    color: #fff !important;
+    border-color: var(--gold);
+    transform: translateY(-1px);
+  }
+  /* X: テキスト記号 */
+  .nav-x {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  /* note: 太字「n」 */
+  .nav-note {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+  .nav-note:hover {
+    background: #41c9b4 !important;
+    color: #fff !important;
+    border-color: #41c9b4 !important;
+  }
+  /* Substack: SVGアイコン */
+  .nav-substack svg {
+    width: 13px;
+    height: 14px;
+    display: block;
+  }
+  .nav-substack:hover {
+    background: #FF6719 !important;
+    color: #fff !important;
+    border-color: #FF6719 !important;
+  }
+  /* Xはゴールド hover を維持 */
+  .nav-x:hover {
+    background: var(--gold) !important;
+    color: #fff !important;
+    border-color: var(--gold) !important;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    background:
+      radial-gradient(ellipse at 75% 50%, rgba(26, 58, 92, 0.5) 0%, transparent 65%),
+      linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: #fff;
+    padding: 140px 0 90px;
+    position: relative;
+    overflow: hidden;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(184, 150, 76, 0.12) 0%, transparent 45%);
+    pointer-events: none;
+    z-index: 4;
+  }
+  .hero .container {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+  }
+  .hero-text { max-width: 640px; position: relative; z-index: 5; }
+
+  /* 縦書き装飾テキスト */
+  .hero-deco-vertical {
+    position: absolute;
+    top: 160px;
+    right: 48px;
+    color: rgba(184, 150, 76, 0.45);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+    writing-mode: vertical-rl;
+    z-index: 5;
+    text-transform: uppercase;
+  }
+
+  /* 装飾ライン左 */
+  .hero-deco-line {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 120px;
+    background: linear-gradient(180deg, transparent, var(--gold), transparent);
+    z-index: 4;
+  }
+
+  /* スクロールヒント */
+  .scroll-hint {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(212, 184, 122, 0.7);
+    font-size: 10px;
+    letter-spacing: 4px;
+    z-index: 5;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .scroll-hint::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 36px;
+    background: linear-gradient(180deg, var(--gold), transparent);
+    margin: 12px auto 0;
+    animation: scroll-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes scroll-pulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.5); transform-origin: top; }
+    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--gold-light);
+    font-size: 11px;
+    letter-spacing: 8px;
+    margin-bottom: 32px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .hero h1 .accent {
+    color: var(--gold-light);
+    border-bottom: none;
+    padding: 0 6px;
+    position: relative;
+    font-weight: 900;
+    background: linear-gradient(180deg, transparent 62%, rgba(184, 150, 76, 0.32) 62%, rgba(184, 150, 76, 0.32) 92%, transparent 92%);
+    white-space: nowrap;
+    display: inline-block;
+  }
+  .hero h1 .line { display: block; }
+  .hero-sub {
+    font-size: 18px;
+    line-height: 2.1;
+    margin-bottom: 44px;
+    color: #d6d2c8;
+    font-weight: 400;
+    border-left: 2px solid rgba(184, 150, 76, 0.4);
+    padding-left: 20px;
+    max-width: 580px;
+  }
+  .hero-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 48px;
+    border-top: 1px solid rgba(184, 150, 76, 0.2);
+    padding-top: 28px;
+  }
+  .hero-credentials span {
+    background: transparent;
+    border: none;
+    padding: 4px 18px 4px 0;
+    margin-right: 18px;
+    font-size: 13.5px;
+    color: var(--gold-light);
+    letter-spacing: 1.5px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    border-right: 1px solid rgba(184, 150, 76, 0.3);
+  }
+  .hero-credentials span:last-child {
+    border-right: none;
+    margin-right: 0;
+  }
+  .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(184, 150, 76, 0.3);
+  }
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(184, 150, 76, 0.5);
+  }
+  .btn-outline {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    background: #fff;
+    color: var(--navy);
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 58%;
+    z-index: 1;
+    margin: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background: var(--navy);
+  }
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 38% 22%;
+    filter: grayscale(100%) brightness(0.78) contrast(1.18);
+    mix-blend-mode: luminosity;
+    opacity: 0.92;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: none;
+    margin: 0;
+    display: block;
+  }
+  /* 紺色レイヤーで写真と背景を融合 */
+  .hero-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      var(--navy-deep) 0%,
+      rgba(16, 37, 66, 0.98) 8%,
+      rgba(16, 37, 66, 0.72) 28%,
+      rgba(16, 37, 66, 0.18) 55%,
+      rgba(8, 26, 48, 0.15) 80%,
+      rgba(8, 26, 48, 0.55) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
+  /* 上下のフェードで写真のエッジを背景に溶かす */
+  .hero-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg,
+        rgba(8, 26, 48, 0.7) 0%,
+        transparent 22%,
+        transparent 78%,
+        rgba(8, 26, 48, 0.65) 100%);
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  /* ===== Section common ===== */
+  section { padding: 110px 0; }
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .section-tag::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 32px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+  .section-lead {
+    font-size: 17.5px;
+    line-height: 2.05;
+    color: var(--text-soft);
+    max-width: 820px;
+    margin-bottom: 64px;
+  }
+  @media (max-width: 768px) {
+    section { padding: 80px 0; }
+    .section-title { font-size: 26px; line-height: 1.5; }
+    .section-lead { font-size: 15px; margin-bottom: 40px; }
+  }
+
+  /* ===== Value ===== */
+  .value { background: var(--cream); }
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .value-card {
+    background: #fff;
+    padding: 44px 36px;
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 8px 24px rgba(16, 37, 66, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(16, 37, 66, 0.12);
+  }
+  .value-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .value-card h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    color: var(--navy);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .value-card p {
+    font-size: 16.5px;
+    line-height: 2.05;
+    color: var(--text-soft);
+  }
+
+  /* ===== Issue / こんな課題に ===== */
+  .issue {
+    background:
+      linear-gradient(rgba(16, 37, 66, 0.92), rgba(8, 26, 48, 0.94));
+    color: #fff;
+  }
+  .issue .section-title { color: #fff; }
+  .issue .section-lead { color: #d6d2c8; }
+  .issue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .issue-item {
+    background: rgba(255,255,255,0.04);
+    border-left: 3px solid var(--gold);
+    padding: 22px 28px;
+    transition: background 0.3s;
+  }
+  .issue-item:hover { background: rgba(255,255,255,0.08); }
+  .issue-icon {
+    width: 38px;
+    height: 38px;
+    color: var(--gold-light);
+    margin-bottom: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(184, 150, 76, 0.12);
+    padding: 7px;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  .issue-icon svg { width: 100%; height: 100%; }
+  .issue-item:hover .issue-icon {
+    background: rgba(184, 150, 76, 0.25);
+    transform: rotate(-6deg) scale(1.05);
+  }
+  .issue-item h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--gold-light);
+    font-weight: 700;
+  }
+  .issue-item p {
+    font-size: 15.5px;
+    line-height: 2;
+    color: #c8c4ba;
+  }
+
+  /* ===== Services ===== */
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .service-main { background: var(--navy); color: #fff; padding: 56px 48px; position: relative; }
+  .service-main::before {
+    content: 'MAIN';
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold-light);
+    border: 1px solid var(--gold);
+    padding: 3px 10px;
+  }
+  .service-main h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .service-main .subtitle { color: var(--gold-light); font-size: 14px; letter-spacing: 2px; margin-bottom: 28px; }
+  .service-main ul { list-style: none; margin-bottom: 32px; }
+  .service-main ul li {
+    padding: 12px 0;
+    padding-left: 22px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 15px;
+  }
+  .service-main ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 16px;
+  }
+  .service-main .note {
+    font-size: 13px;
+    color: #c8c4ba;
+    line-height: 1.8;
+    padding-top: 8px;
+    border-top: 1px solid rgba(184, 150, 76, 0.3);
+  }
+
+  .service-sub-list { display: flex; flex-direction: column; gap: 20px; }
+  .service-sub {
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    padding: 28px 32px;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .service-sub:hover {
+    border-color: var(--gold);
+    transform: translateX(4px);
+  }
+  .service-sub-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(184, 150, 76, 0.1);
+    padding: 7px;
+    border-radius: 8px;
+    transition: all 0.3s;
+  }
+  .service-sub-icon svg { width: 100%; height: 100%; }
+  .service-sub:hover .service-sub-icon {
+    background: var(--gold);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .service-sub h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 21px;
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .service-sub p {
+    font-size: 16px;
+    color: var(--text-soft);
+    line-height: 2.05;
+  }
+
+  /* ===== 松竹梅プラン ===== */
+  .plans-heading {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .plans-heading span {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 4px;
+  }
+  .plans-lead {
+    font-size: 16.5px;
+    color: var(--text-soft);
+    line-height: 2;
+    margin-bottom: 40px;
+  }
+
+  .service-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 24px;
+  }
+  .plan-card {
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    padding: 40px 32px 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+  }
+  .plan-card:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+    box-shadow: 0 18px 44px rgba(16, 37, 66, 0.2);
+    transform: translateY(-4px);
+  }
+
+  /* hover時に梅・松も紺色化（featured竹は元から紺色） */
+  .plan-card:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }
+  .plan-card:hover .plan-rank { color: var(--gold-light); }
+  .plan-card:hover .plan-name { color: #fff; }
+  .plan-card:hover .plan-sub { color: var(--gold-light); }
+  .plan-card:hover .plan-features li {
+    color: #fff;
+    border-bottom-color: rgba(255,255,255,0.12);
+  }
+  .plan-card:hover .plan-features li::before {
+    color: var(--gold-light);
+  }
+  .plan-card:hover .plan-features li strong { color: var(--gold-light); }
+  .plan-card:hover .plan-price-box {
+    background: rgba(255,255,255,0.04);
+    border-top-color: rgba(255,255,255,0.15);
+  }
+  .plan-card:hover .plan-price-label { color: var(--gold-light); }
+  .plan-card:hover .plan-price-value { color: #fff; }
+
+  .plan-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    padding: 6px 18px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .plan-rank {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 48px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .plan-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .plan-sub {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    min-height: 44px;
+  }
+  .plan-features {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 28px;
+  }
+  .plan-features li {
+    padding: 14px 0 14px 24px;
+    position: relative;
+    font-size: 15.5px;
+    line-height: 1.85;
+    border-bottom: 1px solid var(--gray-300);
+    color: var(--text);
+  }
+  .plan-features li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    color: var(--gold);
+    font-size: 9px;
+  }
+  .plan-features li strong {
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .plan-price-box {
+    background: var(--cream);
+    padding: 18px 20px;
+    text-align: center;
+    border-top: 2px solid var(--gold);
+  }
+  .plan-price-label {
+    display: block;
+    font-size: 11px;
+    color: var(--text-soft);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .plan-price-value {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .plans-note {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 2;
+    margin-bottom: 70px;
+    padding: 16px 20px;
+    background: var(--gray-100);
+    border-left: 3px solid var(--gold);
+  }
+
+  .other-heading {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--navy);
+  }
+  .other-lead {
+    font-size: 16px;
+    color: var(--text-soft);
+    line-height: 2;
+    margin-bottom: 32px;
+  }
+  .other-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .expectation-note {
+    background: var(--cream);
+    border: 1px solid var(--gold);
+    padding: 28px 32px;
+    margin-top: 24px;
+  }
+  .expectation-note p:first-child {
+    font-family: 'Noto Serif JP', serif;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .expectation-note p {
+    font-size: 15px;
+    color: var(--text-soft);
+    line-height: 2.05;
+  }
+
+  @media (max-width: 960px) {
+    .service-plans { grid-template-columns: 1fr; gap: 32px; }
+    
+  /* hover時に梅・松も紺色化（featured竹は元から紺色） */
+
+    .other-services { grid-template-columns: 1fr; }
+    .plans-heading { font-size: 22px; }
+  }
+
+  /* ===== Profile ===== */
+  .profile { background: var(--cream); }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .profile-photo {
+    position: relative;
+  }
+  .profile-photo img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px rgba(16, 37, 66, 0.15);
+  }
+  .profile-photo .caption {
+    background: var(--navy);
+    color: #fff;
+    padding: 18px 24px;
+    margin-top: -2px;
+    text-align: center;
+  }
+  .profile-photo .caption .name-ja {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+  }
+  .profile-photo .caption .name-en {
+    font-size: 12px;
+    color: var(--gold-light);
+    letter-spacing: 4px;
+  }
+  .profile-text h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .profile-text p {
+    font-size: 16.5px;
+    line-height: 2.1;
+    color: var(--text-soft);
+    margin-bottom: 20px;
+  }
+  .profile-text .pull {
+    border-left: 3px solid var(--gold);
+    padding-left: 20px;
+    margin: 28px 0;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 19px;
+    color: var(--navy);
+    line-height: 1.9;
+    font-weight: 500;
+  }
+
+  .career-list {
+    list-style: none;
+    margin-top: 32px;
+    border-top: 1px solid var(--gray-300);
+  }
+  .career-list li {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray-300);
+    font-size: 15.5px;
+  }
+  .career-list .year {
+    color: var(--gold);
+    font-weight: 500;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  /* ===== Media / Track Record ===== */
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .media-card {
+    border: 1px solid var(--gray-300);
+    padding: 32px 28px;
+    transition: all 0.3s;
+    background: #fff;
+  }
+  .media-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 12px 30px rgba(16, 37, 66, 0.08);
+  }
+  .media-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+  }
+  .media-card-link:hover {
+    transform: translateY(-2px);
+  }
+  .media-card-cta {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--gold);
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .media-card-link:hover .media-card-cta { color: var(--navy); }
+  .media-card .num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 48px;
+    color: var(--gold);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .media-card h4 {
+    font-size: 17.5px;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .media-card p {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.9;
+  }
+
+  /* ===== Process ===== */
+  .process { background: var(--gray-100); }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    position: relative;
+  }
+  .process-step {
+    background: #fff;
+    padding: 44px 28px 32px;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .process-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(16, 37, 66, 0.12);
+  }
+  .process-step::before {
+    content: attr(data-num);
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 64px;
+    color: rgba(184, 150, 76, 0.18);
+    font-weight: 900;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .process-step .step-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid var(--gold);
+    background: rgba(184, 150, 76, 0.08);
+  }
+  .process-step h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    color: var(--navy);
+    margin-bottom: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+  }
+  .process-step p {
+    font-size: 15px;
+    color: var(--text-soft);
+    line-height: 1.95;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== Contact ===== */
+  .contact {
+    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(184, 150, 76, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .contact-inner { position: relative; max-width: 760px; margin: 0 auto; }
+  .contact .section-tag { color: var(--gold-light); }
+  .contact .section-title { color: #fff; }
+  .contact-lead {
+    font-size: 18.5px;
+    line-height: 2.1;
+    color: #e8e3d6;
+    margin: 0 auto 40px;
+  }
+  .contact-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    margin-bottom: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .contact-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    padding: 22px 60px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(184, 150, 76, 0.4);
+    transition: all 0.3s;
+    border-radius: 2px;
+  }
+  .contact-btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(184, 150, 76, 0.6);
+  }
+  .contact-note {
+    font-size: 13px;
+    color: #c8c4ba;
+    margin-top: 24px;
+    line-height: 1.9;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    background: var(--navy-deep);
+    color: #c8c4ba;
+    padding: 40px 0 30px;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer .container { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+  footer .social-links {
+    display: flex;
+    gap: 24px;
+  }
+  footer .social-links a {
+    color: var(--gold-light);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  footer .social-links a:hover { color: #fff; }
+  footer .legal-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: #6c685f;
+  }
+  footer .legal-links a {
+    color: #c8c4ba;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  footer .legal-links a:hover { color: var(--gold-light); }
+  footer .legal-sep { color: #4c4843; }
+  footer .copy { font-size: 12px; color: #6c685f; letter-spacing: 1px; }
+
+  /* ===== Responsive ===== */
+  .scroll-hint { text-decoration: none; }
+  .scroll-hint:hover { color: var(--gold); }
+
+  @media (max-width: 960px) {
+    .hero { padding: 120px 0 100px; min-height: 80vh; }
+    .hero .container { width: 100%; }
+    .hero h1 { font-size: 36px; line-height: 1.4; }
+    .hero-img { width: 100%; }
+    .hero-img img { object-position: right 12%; opacity: 0.45; max-width: none; margin: 0; }
+    .hero-img::before {
+      background: linear-gradient(180deg,
+        var(--navy-deep) 0%,
+        rgba(16, 37, 66, 0.85) 30%,
+        rgba(16, 37, 66, 0.7) 65%,
+        var(--navy-deep) 100%);
+    }
+    .hero-text { max-width: 100%; }
+    .hero-deco-vertical { display: none; }
+    .hero-deco-line { display: none; }
+    .scroll-hint { display: none; }
+    .hero-credentials { flex-direction: column; gap: 8px; }
+    .hero-credentials span { border-right: none; padding: 4px 0; margin-right: 0; }
+    nav ul { gap: 16px; }
+    nav a { font-size: 13px; }
+    .nav-cta { padding: 8px 14px; font-size: 12px; }
+    section { padding: 70px 0; }
+    .section-title { font-size: 28px; }
+    .value-grid { grid-template-columns: 1fr; gap: 20px; }
+    .issue-grid { grid-template-columns: 1fr; }
+    .service-list { grid-template-columns: 1fr; gap: 32px; }
+    .profile-grid { grid-template-columns: 1fr; gap: 40px; }
+    .media-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .container { padding: 0 20px; }
+    .contact-btn { padding: 18px 36px; font-size: 15px; letter-spacing: 2px; }
+  }
+
+  @media (max-width: 600px) {
+    nav ul li:not(:last-child) { display: none; }
+    .hero h1 { font-size: 28px; }
+    .hero-sub { font-size: 15px; }
+    .section-title { font-size: 24px; }
+    .section-lead { font-size: 15px; }
+    .process-steps { grid-template-columns: 1fr; }
+    .career-list li { grid-template-columns: 80px 1fr; font-size: 13.5px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="container">
+    <div class="logo">渡辺喜美 <span>YOSHIMI WATANABE</span></div>
+    <nav>
+      <ul>
+        <li><a href="#value">提供価値</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#media">実績・出演</a></li>
+        <li><a href="https://x.com/WTNBYSM443" target="_blank" rel="noopener" class="nav-sns nav-x" aria-label="渡辺喜美 公式X">𝕏</a></li>
+        <li><a href="https://note.com/yoshimi_watanabe" target="_blank" rel="noopener" class="nav-sns nav-note" aria-label="渡辺喜美 note">n</a></li>
+        <li><a href="https://substack.com/@yoshimiwatanabe" target="_blank" rel="noopener" class="nav-sns nav-substack" aria-label="渡辺喜美 Substack">
+          <svg viewBox="0 0 21 24" fill="currentColor" width="12" height="14" aria-hidden="true">
+            <path d="M20.539 8.242H.461V5.406h20.078v2.836zM.461 10.812V24L10.5 18.418 20.539 24V10.812H.461zM20.539 0H.461v2.836h20.078V0z"/>
+          </svg>
+        </a></li>
+        <li><a href="https://forms.gle/ozKMtHFQnjqf8UHw6" class="nav-cta" target="_blank" rel="noopener">ご相談</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-img">
+    <img src="images/yoshimi_hero.jpg" alt="渡辺喜美 元金融担当大臣">
+  </div>
+  <span class="hero-deco-vertical">YOSHIMI WATANABE · OFFICIAL</span>
+  <span class="hero-deco-line"></span>
+  <div class="container">
+    <div class="hero-text">
+      <span class="hero-tag">FOR LEADERS &amp; DECISION MAKERS</span>
+      <h1>
+        <span class="line">政策の<span class="accent">"本当の動き"</span>を、</span>
+        <span class="line">経営判断の力に変える。</span>
+      </h1>
+      <p class="hero-sub">
+        元金融担当大臣・元行政改革担当大臣として政策決定の中枢を経験した渡辺喜美が、政策・規制動向を経営者の視点で解説・助言します。
+      </p>
+      <div class="hero-credentials">
+        <span>元 金融担当大臣</span>
+        <span>元 行政改革担当大臣</span>
+        <span>みんなの党 創設者</span>
+      </div>
+      <div class="cta-row">
+        <a href="https://forms.gle/ozKMtHFQnjqf8UHw6" class="btn btn-primary" target="_blank" rel="noopener">ご相談・お見積もり</a>
+        <a href="#service" class="btn btn-outline">サービスを見る</a>
+      </div>
+    </div>
+  </div>
+  <a href="#value" class="scroll-hint">SCROLL</a>
+</section>
+
+<!-- ===== Value ===== -->
+<section class="value" id="value">
+  <div class="container">
+    <span class="section-tag">WHY YOSHIMI WATANABE</span>
+    <h2 class="section-title">なぜ、渡辺喜美なのか。</h2>
+    <p class="section-lead">
+      政策コンサルタントや弁護士は数多くいます。<br>
+      しかし、政策決定の<strong>"内側"</strong>を経験し、かつ経営者の実利目線で翻訳できる人材は、ほぼいません。
+    </p>
+
+    <div class="quote-banner">
+      <div class="quote-banner-img">
+        <img src="images/yoshimi_speaking.jpg" alt="渡辺喜美が語る">
+      </div>
+      <div class="quote-banner-text">
+        <span class="quote-mark">"</span>
+        <p class="quote-body">政策と規制は、企業経営の前提条件を決める<br>"見えないインフラ"。<br>その中身を読み解く力こそが、<br>長期経営の差をつくる。</p>
+        <p class="quote-author">— OUR APPROACH</p>
+      </div>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h3>政策決定の中枢を<br>知る、稀有な実務家OB</h3>
+        <p>第1次安倍内閣・福田内閣にて内閣府特命担当大臣（金融・行政改革・規制改革・公務員制度改革）を歴任。霞が関の意思決定プロセス、官僚と政治家の力学、業界団体との交渉の"中身"を、当事者として知っています。</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h3>規制緩和 × ビジネス<br>イノベーションの結節点</h3>
+        <p>みんなの党を創設し、既得権益と規制改革の最前線に立ち続けてきた経歴。新規事業・スタートアップが直面する「規制の壁」を、政策ロビイングの実務知見で打開します。</p>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h3>経営者の実利目線で<br>政策を"翻訳"</h3>
+        <p>永田町の論理ではなく、企業のP/L・意思決定・タイムラインに直結する形で政策動向を解説。曖昧な「ご説明資料」ではなく、経営判断に使えるインテリジェンスをお届けします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quote-banner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 0;
+    margin: 60px 0 0 0;
+    background: var(--navy);
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(16, 37, 66, 0.2);
+  }
+  .quote-banner-img { position: relative; overflow: hidden; }
+  .quote-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 360px;
+  }
+  .quote-banner-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 70%, var(--navy) 100%);
+    pointer-events: none;
+  }
+  .quote-banner-text {
+    padding: 56px 56px 56px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .quote-mark {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 100px;
+    color: var(--gold);
+    line-height: 0.3;
+    margin-bottom: 24px;
+    font-weight: 700;
+    display: block;
+  }
+  .quote-body {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    line-height: 1.9;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  .quote-author {
+    font-family: 'Noto Serif JP', serif;
+    color: var(--gold-light);
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 700;
+  }
+
+  .service-photo-banner {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 48px;
+    align-items: center;
+    background: var(--cream);
+    padding: 48px 52px;
+    margin: 0 0 60px 0;
+    border-left: 4px solid var(--gold);
+  }
+  .service-photo-img img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 16px 40px rgba(16, 37, 66, 0.18);
+    display: block;
+  }
+  .service-photo-text { padding: 0; }
+  .service-photo-lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    color: var(--navy);
+    line-height: 1.75;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .service-photo-sub {
+    font-size: 16.5px;
+    line-height: 2.05;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 768px) {
+    .quote-banner { grid-template-columns: 1fr; margin: 40px 0 0 0; }
+    .quote-banner-img img { min-height: 260px; }
+    .quote-banner-img::after { background: linear-gradient(180deg, transparent 70%, var(--navy) 100%); }
+    .quote-banner-text { padding: 36px 28px; }
+    .quote-mark { font-size: 70px; margin-bottom: 16px; }
+    .quote-body { font-size: 17px; line-height: 1.9; }
+    .service-photo-banner { grid-template-columns: 1fr; padding: 32px 24px; gap: 24px; }
+    .service-photo-lead { font-size: 19px; }
+  }
+</style>
+
+<!-- ===== Issue ===== -->
+<section class="issue">
+  <div class="container">
+    <span class="section-tag">FOR THESE CHALLENGES</span>
+    <h2 class="section-title">こんな経営課題に、応えます。</h2>
+    <p class="section-lead">
+      規制業種・新規事業・M&A・上場準備・政策渉外。<br>
+      "政策の風向き"が経営判断を左右するすべての場面でお力になれます。
+    </p>
+
+    <div class="issue-grid">
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18"/>
+            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+            <path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/>
+            <path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/>
+            <path d="M7 21h10"/>
+          </svg>
+        </div>
+        <h4>規制業種への政策的視点</h4>
+        <p>金融・医療・エネルギー・通信・モビリティなど、規制業種における政策動向と当局対応について、経験者視点での解説・助言。</p>
+      </div>
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"/>
+            <path d="M12 6V4"/>
+            <path d="M16.24 7.76l1.42-1.42"/>
+            <path d="M18 12h2"/>
+            <path d="M16.24 16.24l1.42 1.42"/>
+            <path d="M12 18v2"/>
+            <path d="M7.76 16.24l-1.42 1.42"/>
+            <path d="M6 12H4"/>
+            <path d="M7.76 7.76L6.34 6.34"/>
+          </svg>
+        </div>
+        <h4>政策動向の早期察知</h4>
+        <p>党内議論・審議会・概算要求の段階で、自社事業に影響する政策の"芽"について、政界・霞が関を知る経験者視点での解説。</p>
+      </div>
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <path d="M8 9h8"/>
+            <path d="M8 13h5"/>
+          </svg>
+        </div>
+        <h4>経営層に向けた政策解説</h4>
+        <p>難解な政策ニュース・規制動向を、経営陣・幹部層向けに分かりやすく解説。「ニュースの本当の意味」を翻訳します。</p>
+      </div>
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+            <polyline points="16 7 22 7 22 13"/>
+          </svg>
+        </div>
+        <h4>新規事業の政策リスク把握</h4>
+        <p>新規市場参入や事業展開を検討する際の規制リスク・政策リスクについて、経験者視点での助言・コメント。</p>
+      </div>
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h4>経営層への政策アドバイザリー</h4>
+        <p>経営陣・幹部層に向けた政策動向・規制動向のインプット提供、戦略会議への参加・助言。</p>
+      </div>
+      <div class="issue-item">
+        <div class="issue-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <h4>役員研修・社内勉強会</h4>
+        <p>経営陣・幹部層向けの政策リテラシー研修、社内勉強会への登壇（半日〜1日）。戦略討議のファシリテーション。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="service">
+  <div class="container">
+    <span class="section-tag">SERVICES</span>
+    <h2 class="section-title">提供サービス</h2>
+    <p class="section-lead">
+      月額顧問契約を軸に、貴社のフェーズ・課題に合わせた柔軟な契約形態をご用意しています。<br>
+      まずはお問い合わせフォームから、課題感をお聞かせください。
+    </p>
+
+    <div class="service-photo-banner">
+      <div class="service-photo-img">
+        <img src="images/yoshimi_speaking.jpg" alt="渡辺喜美">
+      </div>
+      <div class="service-photo-text">
+        <p class="service-photo-lead">政策の動きを、<br>経営者の言葉で解説する。</p>
+        <p class="service-photo-sub">経営判断に関わる政策・規制動向の解説、社内勉強会・経営合宿での講演、ビジネスメディアへの寄稿など、フェーズに応じた多様な形で発信・助言を行っております。まずはお気軽にご相談ください。</p>
+      </div>
+    </div>
+
+    <h3 class="plans-heading">月額顧問契約 <span>3つのプラン</span></h3>
+    <p class="plans-lead">
+      ご支援の密度・頻度に応じて、3つのプランをご用意しています。<br>
+      プランの組み替え・カスタマイズもご相談に応じます。
+    </p>
+
+    <div class="service-plans">
+      <div class="plan-card">
+        <div class="plan-rank">梅</div>
+        <h4 class="plan-name">ライト</h4>
+        <p class="plan-sub">必要な時に<br>気軽に相談したい方へ</p>
+        <ul class="plan-features">
+          <li>個別 1on1 相談（オンライン・必要時）</li>
+          <li>メール／チャット相談</li>
+          <li>政策ニュースへの個別解説コメント</li>
+        </ul>
+        <div class="plan-price-box">
+          <span class="plan-price-label">月額料金</span>
+          <span class="plan-price-value">個別ご提案</span>
+        </div>
+      </div>
+
+      <div class="plan-card featured">
+        <span class="plan-badge">RECOMMENDED</span>
+        <div class="plan-rank">竹</div>
+        <h4 class="plan-name">スタンダード</h4>
+        <p class="plan-sub">経営判断の隣で<br>定期的に助言が欲しい方へ</p>
+        <ul class="plan-features">
+          <li>梅プラン全内容</li>
+          <li><strong>定期的な個別面談</strong>（オンライン／対面）</li>
+          <li><strong>経営判断のセカンドオピニオン</strong>（新規事業・規制対応・人事政策等）</li>
+          <li><strong>社内勉強会・幹部向けレクチャー</strong>（テーマカスタマイズ）</li>
+          <li><strong>業界・市場動向の個別解説</strong>（金融マクロ含む）</li>
+        </ul>
+        <div class="plan-price-box">
+          <span class="plan-price-label">月額料金</span>
+          <span class="plan-price-value">個別ご提案</span>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-rank">松</div>
+        <h4 class="plan-name">プレミアム</h4>
+        <p class="plan-sub">経験と知見を<br>包括的に活用したい方へ</p>
+        <ul class="plan-features">
+          <li>竹プラン全内容</li>
+          <li><strong>講演・基調講演</strong>（業界団体・経営者団体・社内イベント等）</li>
+          <li><strong>経営合宿・年次戦略会議へのゲスト招聘</strong></li>
+          <li><strong>書籍出版・寄稿への協力</strong>（共著・推薦帯・序文・監修等）</li>
+          <li><strong>メディア取材機会の橋渡し</strong>（JBpress等の連載媒体）</li>
+          <li><strong>緊急案件への優先対応</strong>（規制発表・国会動向）</li>
+        </ul>
+        <div class="plan-price-box">
+          <span class="plan-price-label">月額料金</span>
+          <span class="plan-price-value">個別ご提案</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="plans-note">
+      ※ 各プランの面談頻度・対応範囲は、貴社の事業フェーズ・課題に応じて個別にご相談のうえ柔軟に決定いたします。プラン外の単発依頼（書籍監修・大規模講演・複数日ワークショップ等）は別途お見積もりにて承ります。
+    </p>
+
+    <h3 class="other-heading">単発・スポットでのご依頼</h3>
+    <p class="other-lead">月額契約以外の単発のご依頼にも、内容に応じて柔軟に対応いたします。</p>
+
+    <div class="other-services">
+      <div class="service-sub">
+        <div class="service-sub-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="6" width="18" height="13" rx="1"/>
+            <path d="M3 10h18"/>
+            <path d="M8 14h2"/>
+            <path d="M14 14h2"/>
+            <path d="M8 17h8"/>
+            <path d="M7 6V3M17 6V3"/>
+          </svg>
+        </div>
+        <h4>アドバイザリー参画</h4>
+        <p>経営戦略会議・年次方針策定への政策面からの助言。政策・規制動向に関する経営層向けインプット提供。</p>
+      </div>
+      <div class="service-sub">
+        <div class="service-sub-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+            <path d="M7 10l3 2 5-4"/>
+          </svg>
+        </div>
+        <h4>役員研修・社内勉強会</h4>
+        <p>経営陣・幹部層向けの政策リテラシー研修、社内勉強会への登壇（半日〜1日）。テーマ・形式は個別にカスタマイズ。</p>
+      </div>
+      <div class="service-sub">
+        <div class="service-sub-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+            <line x1="12" y1="19" x2="12" y2="23"/>
+            <line x1="8" y1="23" x2="16" y2="23"/>
+          </svg>
+        </div>
+        <h4>講演・基調講演</h4>
+        <p>業界団体総会、経営者団体、社内イベント、シンポジウム等での講演・基調講演（60〜90分）。</p>
+      </div>
+      <div class="service-sub">
+        <div class="service-sub-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </div>
+        <h4>寄稿・取材対応</h4>
+        <p>ビジネス誌・業界誌への寄稿、メディア取材・コメント対応、対談・座談会への登壇。</p>
+      </div>
+      <div class="service-sub">
+        <div class="service-sub-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18h6"/>
+            <path d="M10 22h4"/>
+            <path d="M2 9a7 7 0 1 1 12.79 4 4 4 0 0 0-1.79 3v2H11v-2a4 4 0 0 0-1.79-3A7 7 0 0 1 2 9z"/>
+          </svg>
+        </div>
+        <h4>スポット相談</h4>
+        <p>個別案件への単発相談（1時間〜半日）。ご相談内容により対応可否・形態を個別に判断させていただきます。</p>
+      </div>
+    </div>
+
+    <div class="expectation-note">
+      <p><strong>サービス提供にあたってのお願い</strong></p>
+      <p>
+        本ページ記載のサービスは、ご相談内容・ご依頼の規模・スケジュールに応じて、対応可否・形態・体制を個別に判断させていただきます。<br>
+        経営合宿・大規模研修・複数日にわたるプログラム等、本人単独での対応が難しい案件については、外部パートナーとの連携前提でご相談に応じます。<br>
+        まずはお気軽にお問い合わせフォームよりご連絡ください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Profile ===== -->
+<section class="profile" id="profile">
+  <div class="container">
+    <span class="section-tag">PROFILE</span>
+    <h2 class="section-title">プロフィール</h2>
+
+    <div class="profile-grid">
+      <div class="profile-photo">
+        <img src="images/yoshimi_profile.jpg" alt="渡辺喜美 プロフィール">
+        <div class="caption">
+          <div class="name-ja">渡辺 喜美</div>
+          <div class="name-en">YOSHIMI WATANABE</div>
+        </div>
+      </div>
+
+      <div class="profile-text">
+        <h3>政策の"内側"を知り、<br>経営者の実利を翻訳する。</h3>
+        <p>
+          1952年、栃木県生まれ。早稲田大学政治経済学部および中央大学法学部を卒業後、父・渡辺美智雄（元副総理・大蔵大臣）の秘書官を経て、1996年に衆議院議員初当選。以降6期連続当選を果たし、第1次安倍内閣・福田内閣にて内閣府特命担当大臣として、規制改革・金融・行政改革・公務員制度改革を歴任。独立行政法人改革、公務員制度改革の最前線に立った。
+        </p>
+        <p class="pull">
+          「規制と政策は、企業経営の前提条件を決める"見えないインフラ"。<br>
+          ここの中身を知らずに、長期戦略は描けない。」
+        </p>
+        <p>
+          2009年、既得権益と霞が関の構造改革を掲げて「みんなの党」を創設。「みんなで決めよう、みんなのために」を党是に、行政改革・規制緩和・地域主権を訴え続けた。
+        </p>
+        <p>
+          2016年には参議院議員（比例代表）として政界復帰を果たし、2022年に国会議員を退任。以降は民間の実務家として、ビジネスメディア「JBpress」での連載、Substackでの日英並行発信、企業向け顧問・アドバイザリー活動を通じて、政策と経営をつなぐ稀有な役割を担っている。
+        </p>
+
+        <ul class="career-list">
+          <li><span class="year">1952</span><span>栃木県生まれ（父：渡辺美智雄／元副総理・大蔵大臣）</span></li>
+          <li><span class="year">学歴</span><span>早稲田大学政治経済学部 卒業／中央大学法学部 学士入学・卒業</span></li>
+          <li><span class="year">1983-</span><span>父・渡辺美智雄（通産大臣・外務大臣）秘書官</span></li>
+          <li><span class="year">1996</span><span>衆議院議員 初当選（以降6期連続・〜2014年）</span></li>
+          <li><span class="year">2006</span><span>第1次安倍内閣 内閣府特命担当大臣（規制改革）就任</span></li>
+          <li><span class="year">2007</span><span>福田内閣 内閣府特命担当大臣（金融・行政改革・公務員制度改革）兼任</span></li>
+          <li><span class="year">2009</span><span>「みんなの党」創設・代表就任</span></li>
+          <li><span class="year">2016</span><span>参議院議員 当選（比例代表・1期／〜2022年）</span></li>
+          <li><span class="year">2022</span><span>政界引退、民間の実務家として活動開始</span></li>
+          <li><span class="year">現在</span><span>JBpress連載／Substack日英並行発信／企業顧問・アドバイザリー</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Media ===== -->
+<section id="media">
+  <div class="container">
+    <span class="section-tag">TRACK RECORD &amp; MEDIA</span>
+    <h2 class="section-title">実績・メディア</h2>
+    <p class="section-lead">
+      ビジネスメディアでの定期発信、各種メディア出演、講演実績を通じて、政策と経営をつなぐ発信を続けています。
+    </p>
+
+    <div class="media-grid">
+      <div class="media-card">
+        <div class="num">13<small style="font-size:18px;">本</small></div>
+        <h4>JBpress 連載寄稿</h4>
+        <p>金融政策・行政改革・地政学リスクをテーマに、ビジネスメディアの定番として継続寄稿中。</p>
+      </div>
+      <div class="media-card">
+        <div class="num">6<small style="font-size:18px;">期</small></div>
+        <h4>衆議院議員</h4>
+        <p>1996年初当選以降、栃木県から6期連続当選。地元と国政の両軸で活動を継続。</p>
+      </div>
+      <div class="media-card">
+        <div class="num">2<small style="font-size:18px;">領域</small></div>
+        <h4>大臣ポスト経験</h4>
+        <p>金融担当大臣・行政改革担当大臣を歴任。リーマンショック・独法改革の最前線。</p>
+      </div>
+      <div class="media-card">
+        <div class="num">JP/EN</div>
+        <h4>Substack 日英並行発信</h4>
+        <p>国内外の経営者・投資家向けに、日英2言語で政策・金融マクロを定期発信。</p>
+      </div>
+      <a href="https://x.com/WTNBYSM443" target="_blank" rel="noopener" class="media-card media-card-link">
+        <div class="num">𝕏</div>
+        <h4>X（旧Twitter）公式アカウント</h4>
+        <p>@WTNBYSM443<br>政策動向への即時コメント、市場関係者・経営層との対話の場として運用中。</p>
+        <span class="media-card-cta">アカウントを見る →</span>
+      </a>
+      <div class="media-card">
+        <div class="num">+</div>
+        <h4>メディア出演・対談</h4>
+        <p>ビジネス誌・テレビ・YouTubeチャンネル等でのインタビュー、対談実績多数。</p>
+      </div>
+    </div>
+
+    <div class="articles-section">
+      <div class="articles-header">
+        <h3 class="articles-title">JBpress 連載寄稿 <span>ALL ARTICLES</span></h3>
+        <a href="https://jbpress.ismedia.jp/search/author/%E6%B8%A1%E8%BE%BA+%E5%96%9C%E7%BE%8E" target="_blank" rel="noopener" class="articles-all">JBpressで全て見る →</a>
+      </div>
+
+      <div class="articles-carousel">
+        <button class="carousel-btn carousel-prev" aria-label="前の記事へ" type="button">‹</button>
+        <div class="articles-track">
+          <a href="https://jbpress.ismedia.jp/articles/-/94765" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2026.05.11</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「消費税ゼロも減税も反対」言わずして抗う財務省の"腹話術"、高市政権の公約実現を左右する日銀の利上げ方針</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/93173" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2026.02.07</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「自民が勝とうが負けようが、消費減税は絶対ない」ささやいた財務省OB、高市政権は食料品消費税ゼロを断行できるか</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/92545" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2026.01.01</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>高市内閣・サナエノミクス実現を遠のかせる植田日銀、時期尚早の引き締めが低迷経済からのテイクオフをまたも阻む</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/92206" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.12.30</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>高市自民と維新が仕掛ける"対公明リベンジ"、議員定数削減で狙う大打撃、「第三極」の旗降ろす維新は消滅の道へ？</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/91067" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.10.10</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>高市さんでも玉木さんでもいい、世論の望みは物価高対策だ――自公26年目の離婚危機と「玉木首相」誕生の現実味</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/90923" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.10.03</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「ムチャしない」進次郎政権なら財務省は安堵、高市政権なら減税掲げて衆院解散へ？自民総裁選の行方と続くシナリオ</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/90552" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.09.13</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「いつ辞めてもいい」と言っていた石破さんは、辞めるべき時に辞めたくなくなった…欠いていた引き際の美学と潔さ</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/87467" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.04.01</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「解体しろ」と叩かれる財務省が"ぜひとも避けたい"次の総理は？いま政治の主要軸になる「財務省との距離感」</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/86827" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.02.27</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>私にぼやいた石破総理「タバコは1日5本しか吸えない…」 短命を覚悟して生まれた、政権を支える奇妙な浮力</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/86105" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2025.01.21</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「自己満足」「分裂必至」「ブレークしない」批判の多い石丸新党「再生の道」、それでも期待される地方議会へのメス</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/85781" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.12.29</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>突然、ビートたけしさんの喋りが止まらなくなった…「TVタックル」オンエアでは当然カットされた2024年政治の本質</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/84451" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.11.19</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【不倫余波続く玉木雄一郎氏】脇は甘かった、それでも政策を実現せねば永久に訪れない不倫と政策とのデカップリング</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/84176" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.11.06</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【103万円の壁】「いい湯だな」なんて暇はない、国民民主「バラマキ玉木」が戦う財務省の「理屈・屁理屈・腹話術」</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/84098" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.10.31</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【キャスティングボート握る国民民主】なんと8.7倍のレバレッジ…国民・玉木代表に絶好機到来、連立話は参院選後か</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/84096" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.10.31</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【石破氏はなぜ負けた】「敵はもっと近くに置け」ゴッドファーザーは言ったのに…ブレない異端者がブレ、失った信用</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/83778" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.10.18</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【党内抗争不可避の石破政権】短命に終わるか？歴代の政権崩壊とピタリと合致する、あるグラフが示す"不吉な法則"</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/83765" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.10.17</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【"豹変総理"の信念】石破氏が擦り切れるまで聞いたカセットテープ「食わんがためか、モテたいからか」その真意は</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/83504" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.10.02</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>「石破のせがれ預かってくれんかね。頼むよ」電話口で響いた田中角栄のダミ声…"緊縮派"の宰相・石破茂誕生の瞬間</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+          <a href="https://jbpress.ismedia.jp/articles/-/83351" target="_blank" rel="noopener" class="article-card">
+            <div class="article-card-top">
+              <span class="article-date">2024.09.25</span>
+              <span class="article-media-tag">JBpress</span>
+            </div>
+            <h4>【自民党総裁選2024】高市早苗に抜かれた度肝、森喜朗首相に「あんた、辞めたら承知せえへんで」 覚悟はAAAだが…？</h4>
+            <span class="article-cta">記事を読む →</span>
+          </a>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="次の記事へ" type="button">›</button>
+      </div>
+      <p class="articles-count">全 <strong>19</strong> 記事 ・ 連載継続中</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .articles-section { margin-top: 80px; }
+  .articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--navy);
+    padding-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .articles-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .articles-title span {
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-left: 12px;
+  }
+  .articles-all {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+  .articles-all:hover { color: var(--navy); }
+  .articles-list { display: flex; flex-direction: column; gap: 16px; }
+  .articles-carousel { position: relative; margin: 0; }
+  .articles-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 4px 24px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .articles-track::-webkit-scrollbar { height: 6px; }
+  .articles-track::-webkit-scrollbar-track { background: var(--gray-100); border-radius: 3px; }
+  .articles-track::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+  .articles-track .article-link {
+    flex: 0 0 calc(50% - 12px);
+    scroll-snap-align: start;
+    margin: 0;
+  }
+  .articles-track .article-link:hover { transform: translateY(-2px); }
+
+  /* ===== JBpress エディトリアル風カード ===== */
+  .article-card {
+    flex: 0 0 calc(33.333% - 14px);
+    scroll-snap-align: start;
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    padding: 28px 28px 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.35s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    overflow: hidden;
+  }
+  .article-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .article-card:hover {
+    border-color: var(--navy);
+    box-shadow: 0 18px 40px rgba(16, 37, 66, 0.15);
+    transform: translateY(-4px);
+  }
+  .article-card:hover::before { transform: scaleX(1); }
+  .article-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .article-date {
+    font-family: 'Noto Serif JP', serif;
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .article-media-tag {
+    background: var(--navy);
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 4px 10px;
+    font-weight: 500;
+  }
+  .article-card h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.65;
+    font-weight: 700;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .article-card .article-cta {
+    color: var(--gold);
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--gray-300);
+    padding-top: 14px;
+    transition: color 0.3s;
+  }
+  .article-card:hover .article-cta { color: var(--navy); }
+  .articles-count {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 13px;
+    color: var(--text-soft);
+    letter-spacing: 2px;
+  }
+  .articles-count strong {
+    color: var(--gold);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 4px;
+  }
+  @media (max-width: 960px) {
+    .article-card { flex: 0 0 calc(50% - 10px); }
+  }
+  @media (max-width: 600px) {
+    .article-card { flex: 0 0 calc(100% - 8px); min-height: 240px; }
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold-light);
+    border: none;
+    font-size: 32px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 6px 20px rgba(16, 37, 66, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    line-height: 1;
+    padding: 0 0 6px 0;
+    font-family: Arial, sans-serif;
+  }
+  .carousel-btn:hover {
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(184, 150, 76, 0.4);
+  }
+  .carousel-prev { left: -22px; }
+  .carousel-next { right: -22px; }
+  @media (max-width: 768px) {
+    .articles-track .article-link { flex: 0 0 calc(100% - 16px); }
+    .carousel-btn { display: none; }
+  }
+  .article-link {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    padding: 28px 32px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .article-link:hover {
+    border-color: var(--gold);
+    box-shadow: 0 12px 30px rgba(16, 37, 66, 0.1);
+    transform: translateX(4px);
+  }
+  .article-media {
+    display: inline-block;
+    background: var(--navy);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 3px 12px;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .article-link h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+  .article-link p {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .article-cta {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .articles-title { font-size: 20px; }
+    .articles-title span { display: block; margin: 6px 0 0 0; }
+    .article-link { padding: 22px 24px; }
+    .article-link h4 { font-size: 16px; }
+  }
+</style>
+
+<!-- ===== Appearances ===== -->
+<section class="appearances" id="appearances">
+  <div class="container">
+    <span class="section-tag">APPEARANCES</span>
+    <h2 class="section-title">メディア出演・発信実績</h2>
+    <p class="section-lead">
+      政界引退後も、テレビ・YouTube・ビジネスメディアでの発信を継続。<br>
+      政策の"内側"を経営者・市民に翻訳して伝える発信を、多チャネルで展開しています。
+    </p>
+
+    <h3 class="app-sub-heading"><span class="app-sub-tag">01</span>テレビ・YouTube 出演</h3>
+
+    <div class="media-cards-grid">
+      <a href="https://www.youtube.com/watch?v=09Ipmf6ouo4" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/09Ipmf6ouo4/maxresdefault.jpg" alt="楽待 渡辺喜美" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-yt">YouTube ・ 楽待</span>
+            <span class="media-thumb-date">出演</span>
+          </div>
+          <h4>高市政権スタート！維新の絶妙な距離感のワケ</h4>
+          <p>楽待（RAKUMACHI）出演。閣外協力・議員定数削減・財務大臣人事・キーパーソンの動向まで詳細解説。</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=4nnnYmo2g8w" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/4nnnYmo2g8w/maxresdefault.jpg" alt="BS11 インサイドOUT 渡辺喜美" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-tv">TV ・ BS11</span>
+            <span class="media-thumb-date">出演</span>
+          </div>
+          <h4>BS11「インサイドOUT」連立の行方</h4>
+          <p>自民・維新両党を熟知する男に聞く政局解説。日本大学名誉教授・岩井奉信氏との共演。</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=pC1D7OU4gNQ" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/pC1D7OU4gNQ/maxresdefault.jpg" alt="深層NEWS 渡辺喜美" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-tv">TV ・ BS日テレ</span>
+            <span class="media-thumb-date">2023.12</span>
+          </div>
+          <h4>渡辺喜美×若狭勝「深層NEWS」</h4>
+          <p>松野官房長官・安倍派政治資金パーティー裏金問題、特捜部の捜査と岸田政権の行方について解説。</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/results?search_query=%E6%B8%A1%E8%BE%BA%E5%96%9C%E7%BE%8E" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img media-thumb-placeholder gradient-yt">
+          <span class="placeholder-mark">𝐘</span>
+          <span class="placeholder-title">渡辺よしみ</span>
+          <span class="placeholder-sub">OFFICIAL CHANNEL</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-yt">YouTube ・ 本人運営</span>
+            <span class="media-thumb-date">2019〜</span>
+          </div>
+          <h4>「渡辺よしみ」公式チャンネル</h4>
+          <p>3〜5分の解説動画で、政治・経済・国内外時事問題を独自視点で配信。事務所・議員会館から定期発信中。</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=vB5psJwj91s" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/vB5psJwj91s/maxresdefault.jpg" alt="渡辺喜美 現代政治 第1回" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-yt">YouTube ・ CGS</span>
+            <span class="media-thumb-date">継続中</span>
+          </div>
+          <h4>「1940年体制をぶっ壊す！」</h4>
+          <p>チャンネルくらら「渡辺喜美 現代政治」シリーズ。戦時体制・55年体制・現代日本の構造的課題を読み解く解説シリーズ。</p>
+        </div>
+      </a>
+      <a href="https://www.gstrategy.jp/blog/2108/" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img media-thumb-placeholder gradient-navy">
+          <span class="placeholder-title">GRAND<br>STRATEGY</span>
+          <span class="placeholder-sub">EPISODE #154</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-yt">グランドストラテジー</span>
+            <span class="media-thumb-date">出演</span>
+          </div>
+          <h4>「日本の現代政治を考える」第154回</h4>
+          <p>日本の戦略・経済政策・現代政治について深掘り対談。長尺の本格議論シリーズ。</p>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/results?search_query=%E6%B8%A1%E8%BE%BA%E5%96%9C%E7%BE%8E+%E3%83%86%E3%83%AC%E6%9D%B1%E5%A4%A7%E5%AD%A6" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img media-thumb-placeholder gradient-mix">
+          <span class="placeholder-title">テレ東大学</span>
+          <span class="placeholder-sub">w/ 成田悠輔 · ひろゆき</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-tv">テレビ東京</span>
+            <span class="media-thumb-date">特別回</span>
+          </div>
+          <h4>「テレ東大学」対談出演</h4>
+          <p>成田悠輔氏・ひろゆき氏との対談に登場。政界復帰を打診される場面も話題に。</p>
+        </div>
+      </a>
+      <a href="https://txbiz.tv-tokyo.co.jp/cambria/" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img media-thumb-placeholder gradient-gold">
+          <span class="placeholder-mark">TX</span>
+          <span class="placeholder-title">カンブリア宮殿</span>
+          <span class="placeholder-sub">テレビ東京</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-tv">TV ・ テレビ東京</span>
+            <span class="media-thumb-date">2010.05</span>
+          </div>
+          <h4>日経スペシャル カンブリア宮殿</h4>
+          <p>「次のリーダーたちに聞く！政治は変われるか？」をテーマに登場。代表的なビジネス番組での発信実績。</p>
+        </div>
+      </a>
+    </div>
+
+    <h3 class="app-sub-heading"><span class="app-sub-tag">02</span>ファン制作・切り抜き動画</h3>
+
+    <div class="media-cards-grid clips-grid">
+      <a href="https://www.youtube.com/watch?v=lHUquA7RqZw" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/lHUquA7RqZw/maxresdefault.jpg" alt="脱官僚を掲げ政界を去った男 渡辺喜美" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-clip">切り抜き ・ なりたい部屋</span>
+            <span class="media-thumb-date">対談</span>
+          </div>
+          <h4>脱官僚を掲げ政界を去った男！渡辺喜美氏と成田先生</h4>
+          <p>経済学者・成田悠輔氏との対談切り抜き。政界引退の真意と現代政治の課題について語る。</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/shorts/KbdX3usfXl8" target="_blank" rel="noopener" class="media-thumb-card">
+        <div class="media-thumb-img">
+          <img src="https://img.youtube.com/vi/KbdX3usfXl8/maxresdefault.jpg" alt="政治家の存在意義 渡辺喜美" loading="lazy">
+          <span class="media-thumb-play">▶</span>
+        </div>
+        <div class="media-thumb-info">
+          <div class="media-thumb-meta">
+            <span class="media-thumb-tag tag-clip">Shorts ・ 切り抜き</span>
+            <span class="media-thumb-date">短尺</span>
+          </div>
+          <h4>渡辺喜美が語る「政治家の存在意義と本質」</h4>
+          <p>本音トーク切り抜きShorts。スタジオを揺るがした政治家論の核心部分。</p>
+        </div>
+      </a>
+    </div>
+
+    <p class="clips-note">
+      ※ 上記の切り抜き動画は、第三者による独自編集・公開によるものです。本人による発信ではなく、編集・抜粋により本人の発言意図と異なる文脈で伝えられている可能性があります。動画の内容について当方は責任を負いません。正確な発言内容については、各公式チャンネル等の原典をご参照ください。
+    </p>
+
+    <h3 class="app-sub-heading"><span class="app-sub-tag">03</span>ビジネスメディア・SNS・著作</h3>
+
+    <div class="app-grid">
+      <div class="app-category">
+        <div class="app-cat-header">
+          <span class="app-cat-icon">WEB</span>
+          <h3>ビジネスメディア・ニュースレター</h3>
+        </div>
+        <ul class="app-list">
+          <li>
+            <div class="app-meta">JBpress｜連載中</div>
+            <div class="app-title">経済・政治コラム連載寄稿</div>
+            <div class="app-desc">高市政権・消費税問題・財務省構造問題などを経営者目線で読み解く連載。月数本ペースで継続中。</div>
+          </li>
+          <li>
+            <div class="app-meta">Substack｜開設準備中</div>
+            <div class="app-title">国際向け定期ニュースレター（日英並行配信予定）</div>
+            <div class="app-desc">日本語・英語の両言語で金融マクロ・地政学・政策動向を発信予定。海外の投資家・経営者層に向けた情報発信チャネルとして準備中。</div>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="app-category">
+        <div class="app-cat-header">
+          <span class="app-cat-icon">SNS</span>
+          <h3>SNS・著作</h3>
+        </div>
+        <ul class="app-list">
+          <li>
+            <div class="app-meta">X（旧Twitter）｜2022年6月〜・主力発信チャネル</div>
+            <div class="app-title">公式アカウント @WTNBYSM443</div>
+            <div class="app-desc">
+              金融マクロ分析（中央銀行論・為替・金融政策）、政策ニュースへの即時コメント、市場関係者・経営層との対話の場として運用。フォロワー層は経営層・金融関係者中心。<br>
+              <a href="https://x.com/WTNBYSM443" target="_blank" rel="noopener" class="app-inline-link">アカウントを見る →</a>
+            </div>
+          </li>
+          <li>
+            <div class="app-meta">Instagram｜運用中</div>
+            <div class="app-title">公式アカウント運用</div>
+            <div class="app-desc">講演・対談・出演の最新情報を写真・動画で発信。</div>
+          </li>
+          <li>
+            <div class="app-meta">著書｜単著・共著</div>
+            <div class="app-title">政策提言書を多数発刊</div>
+            <div class="app-desc">行政改革・規制緩和・中央銀行論などをテーマに、政策提言書を多数執筆・発刊。</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="app-note">
+      ※ 本リストは主要なメディア出演・発信活動の抜粋です。最新の出演情報・対談実績については、お問い合わせフォームよりお気軽にお尋ねください。
+    </p>
+  </div>
+</section>
+
+<style>
+  .appearances { background: var(--cream); }
+  .app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .app-category {
+    background: #fff;
+    padding: 36px 32px;
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 8px 24px rgba(16, 37, 66, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .app-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(16, 37, 66, 0.1);
+  }
+  .app-cat-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .app-cat-icon {
+    background: var(--navy);
+    color: var(--gold-light);
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .app-cat-header h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .app-list { list-style: none; display: flex; flex-direction: column; gap: 22px; }
+  .app-list li {
+    padding-left: 18px;
+    border-left: 2px solid var(--gold);
+  }
+  .app-meta {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .app-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17.5px;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  .app-desc {
+    font-size: 15px;
+    line-height: 2.05;
+    color: var(--text-soft);
+  }
+  .app-note {
+    margin-top: 40px;
+    font-size: 14.5px;
+    color: var(--text-soft);
+    text-align: center;
+    line-height: 1.9;
+  }
+
+  /* サブ見出し */
+  .app-sub-heading {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    color: var(--navy);
+    font-weight: 700;
+    margin: 16px 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--navy);
+  }
+  .app-sub-heading:not(:first-child) { margin-top: 80px; }
+  .app-sub-tag {
+    background: var(--gold);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+  /* メディアサムネカードグリッド */
+  .media-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+  .media-thumb-card {
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--gray-300);
+    overflow: hidden;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .media-thumb-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px rgba(16, 37, 66, 0.15);
+    border-color: var(--gold);
+  }
+  .media-thumb-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--navy);
+  }
+  .media-thumb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .media-thumb-card:hover .media-thumb-img img {
+    transform: scale(1.08);
+  }
+  .media-thumb-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s;
+    padding-left: 4px;
+  }
+  .media-thumb-card:hover .media-thumb-play {
+    background: var(--gold);
+    border-color: var(--gold);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  /* プレースホルダー（画像なし時） */
+  .media-thumb-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  .media-thumb-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.05) 50%, transparent 60%);
+    pointer-events: none;
+  }
+  .gradient-yt {
+    background: linear-gradient(135deg, #b91d1d 0%, #7a1313 100%);
+  }
+  .gradient-navy {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  }
+  .gradient-gold {
+    background: linear-gradient(135deg, #c9a154 0%, #8a6b2e 100%);
+    color: #fff;
+  }
+  .gradient-mix {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--gold) 100%);
+  }
+  .placeholder-mark {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.85;
+    margin-bottom: 4px;
+  }
+  .placeholder-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+  .placeholder-sub {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.75;
+    margin-top: 4px;
+  }
+
+  /* カード下部情報 */
+  .media-thumb-info {
+    padding: 20px 22px 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .media-thumb-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .media-thumb-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .tag-tv {
+    background: var(--navy);
+    color: var(--gold-light);
+  }
+  .tag-yt {
+    background: #b91d1d;
+    color: #fff;
+  }
+  .tag-clip {
+    background: linear-gradient(135deg, #6b4d2e 0%, #8a6b2e 100%);
+    color: #fff;
+  }
+  .clips-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .clips-note {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--text-soft);
+    margin-top: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    .clips-grid { grid-template-columns: 1fr; }
+  }
+  .media-thumb-date {
+    font-family: 'Noto Serif JP', serif;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .media-thumb-info h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17.5px;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.55;
+    font-weight: 700;
+  }
+  .media-thumb-info p {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.95;
+    flex: 1;
+  }
+
+  @media (max-width: 960px) {
+    .media-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  }
+  @media (max-width: 600px) {
+    .media-cards-grid { grid-template-columns: 1fr; }
+    .app-sub-heading { font-size: 18px; }
+  }
+  .app-inline-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+  .app-inline-link:hover { color: var(--navy); }
+  @media (max-width: 768px) {
+    .app-grid { grid-template-columns: 1fr; gap: 20px; }
+    .app-category { padding: 28px 24px; }
+  }
+</style>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <span class="section-tag">FAQ</span>
+    <h2 class="section-title">よくあるご質問</h2>
+    <p class="section-lead">
+      ご相談いただく前に、よくお寄せいただく質問にお答えします。<br>
+      その他のご質問はお問い合わせフォームよりお気軽にお寄せください。
+    </p>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>月額顧問契約の料金感はどのくらいですか？</summary>
+        <div class="faq-answer">
+          事業規模・関与範囲・支援頻度に応じて個別にご提案しております。料金帯は幅広くご用意しておりますので、まずはお気軽にご相談ください。具体的な金額はヒアリングの上、ご提案書にてお示しいたします。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>講演料金はいくらですか？</summary>
+        <div class="faq-answer">
+          講演テーマ・時間・対象規模・開催場所により個別にお見積もりをご提示いたします。基調講演（60〜90分）、役員研修（半日〜2日）、対談・パネル登壇など、各種形態に対応可能です。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>対応エリアはどこまでですか？</summary>
+        <div class="faq-answer">
+          東京都内を中心に対面でのご対応を承っております。地方・海外につきましては、原則オンライン（Zoom等）でのご対応となります。海外開催のカンファレンス等への対面登壇は、個別にご相談に応じます。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>契約期間の縛りはありますか？</summary>
+        <div class="faq-answer">
+          月額顧問契約は、原則3ヶ月〜の継続契約を推奨しております。ただし、貴社のフェーズや課題の性質に応じて、契約期間・関与度を柔軟にご相談いたします。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>業界・業種に制限はありますか？</summary>
+        <div class="faq-answer">
+          規制業種（金融・医療・エネルギー・通信・モビリティ等）を中心に幅広い業種にご対応可能です。ただし、競合関係・利益相反関係にある複数社の同時受任はお断りする場合がございます。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>機密保持（NDA）はどのように扱われますか？</summary>
+        <div class="faq-answer">
+          案件性質・関与範囲に応じて、貴社にて運用されている機密保持契約（NDA）の雛形でのご締結をお願いしております。雛形がない場合は個別にご相談ください。お問い合わせ段階の情報も含め、厳格に管理し、外部に共有することはございません。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>政治家への口利き・斡旋はお願いできますか？</summary>
+        <div class="faq-answer">
+          政治家・行政機関への個別の働きかけ・口利き・斡旋は、いかなる形でも一切お受けしておりません。あくまで政策動向の解説、経営戦略への翻訳、公的な対話設計の助言にとどまります。
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>取材・メディア出演の依頼はできますか？</summary>
+        <div class="faq-answer">
+          ビジネス誌・経済誌・テレビ・YouTube番組等への取材、対談、コメント取材、寄稿のご依頼を承っております。お問い合わせフォームより内容・媒体・締切等をお知らせください。
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq { background: #fff; }
+  .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 880px; margin: 0 auto; }
+  .faq-item {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    transition: background 0.3s;
+  }
+  .faq-item[open] { background: #fff; box-shadow: 0 8px 24px rgba(16, 37, 66, 0.08); border-left-color: var(--navy); }
+  .faq-item summary {
+    cursor: pointer;
+    padding: 24px 30px 24px 58px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18.5px;
+    font-weight: 700;
+    color: var(--navy);
+    position: relative;
+    list-style: none;
+    line-height: 1.6;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::before {
+    content: 'Q';
+    position: absolute;
+    left: 24px;
+    top: 22px;
+    color: var(--gold);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 28px;
+    top: 18px;
+    color: var(--gold);
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform 0.3s;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-answer {
+    padding: 0 30px 26px 58px;
+    font-size: 16px;
+    line-height: 2.05;
+    color: var(--text-soft);
+    position: relative;
+  }
+  .faq-answer::before {
+    content: 'A';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+  }
+  @media (max-width: 600px) {
+    .faq-item summary { padding: 18px 50px 18px 48px; font-size: 15px; }
+    .faq-item summary::before { left: 18px; top: 18px; }
+    .faq-item summary::after { right: 20px; top: 14px; }
+    .faq-answer { padding: 0 24px 22px 48px; font-size: 14px; }
+    .faq-answer::before { left: 18px; }
+  }
+</style>
+
+<!-- ===== Process ===== -->
+<section class="process">
+  <div class="container">
+    <span class="section-tag">PROCESS</span>
+    <h2 class="section-title">ご相談の流れ</h2>
+    <p class="section-lead">
+      お問い合わせから契約開始まで、最短2週間でご案内可能です。<br>
+      まずはお気軽にご相談ください。
+    </p>
+
+    <div class="process-steps">
+      <div class="process-step" data-num="01">
+        <div class="step-num">STEP 01</div>
+        <h4>お問い合わせ</h4>
+        <p>専用フォームより、貴社の課題感・検討中のサービス内容をお知らせください。</p>
+      </div>
+      <div class="process-step" data-num="02">
+        <div class="step-num">STEP 02</div>
+        <h4>ヒアリング</h4>
+        <p>オンライン（30〜60分）または対面で、課題と期待値を詳しくお聞かせいただきます。</p>
+      </div>
+      <div class="process-step" data-num="03">
+        <div class="step-num">STEP 03</div>
+        <h4>ご提案・お見積もり</h4>
+        <p>サービス内容・契約形態・料金を個別に設計し、ご提案書をお送りします。</p>
+      </div>
+      <div class="process-step" data-num="04">
+        <div class="step-num">STEP 04</div>
+        <h4>ご契約・開始</h4>
+        <p>契約締結後、すぐに支援を開始いたします。最短お問い合わせから2週間。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Latest from X ===== -->
+<section class="latest-x" id="latest-x">
+  <div class="container">
+    <span class="section-tag">LATEST FROM X</span>
+    <h2 class="section-title">Xでの発信</h2>
+    <p class="section-lead">
+      渡辺喜美の最新の政策・金融マクロ分析コメントは、X（旧Twitter）にて日々発信中。<br>
+      下記アカウントをフォローしてリアルタイムでチェックください。
+    </p>
+
+    <!-- プロフィールカード -->
+    <div class="x-profile-card">
+      <div class="x-profile-header">
+        <div class="x-profile-avatar">
+          <img src="images/yoshimi_profile.jpg" alt="渡辺喜美">
+        </div>
+        <div class="x-profile-info">
+          <div class="x-profile-name">
+            渡辺 喜美
+            <svg viewBox="0 0 22 22" class="x-verified" aria-label="認証マーク">
+              <path fill="#1d9bf0" d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"/>
+            </svg>
+          </div>
+          <div class="x-profile-handle">@WTNBYSM443</div>
+          <p class="x-profile-bio">
+            元金融担当大臣・元行政改革担当大臣／みんなの党 創設者／JBpress 連載中。<br>
+            政策・規制動向、金融マクロ分析を経営者の視点で発信しています。
+          </p>
+          <a href="https://x.com/WTNBYSM443" target="_blank" rel="noopener" class="x-follow-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align:-2px;margin-right:8px;">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Xでフォロー
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 代表的な発信（個別ツイート埋め込み） -->
+    <h3 class="x-recent-heading">— 代表的な発信</h3>
+    <div class="x-tweets-grid">
+      <div class="x-tweet-item">
+        <blockquote class="twitter-tweet" data-theme="light" data-conversation="none" data-dnt="true">
+          <a href="https://twitter.com/WTNBYSM443/status/2053678213189218580"></a>
+        </blockquote>
+      </div>
+      <div class="x-tweet-item">
+        <blockquote class="twitter-tweet" data-theme="light" data-conversation="none" data-dnt="true">
+          <a href="https://twitter.com/WTNBYSM443/status/2049368279437935016"></a>
+        </blockquote>
+      </div>
+      <div class="x-tweet-item">
+        <blockquote class="twitter-tweet" data-theme="light" data-conversation="none" data-dnt="true">
+          <a href="https://twitter.com/WTNBYSM443/status/2061910361675284822"></a>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .latest-x { background: var(--gray-100); }
+  .latest-x .section-lead { text-align: left; }
+
+  /* プロフィールカード */
+  .x-profile-card {
+    max-width: 720px;
+    margin: 0 auto 56px;
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(16, 37, 66, 0.08);
+    overflow: hidden;
+  }
+  .x-profile-header {
+    display: flex;
+    gap: 28px;
+    padding: 36px 36px;
+    align-items: flex-start;
+  }
+  .x-profile-avatar {
+    flex-shrink: 0;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+  }
+  .x-profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .x-profile-info { flex: 1; min-width: 0; }
+  .x-profile-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .x-verified {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .x-profile-handle {
+    color: var(--text-soft);
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .x-profile-bio {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+  .x-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11px 24px;
+    border-radius: 999px;
+    transition: all 0.3s;
+  }
+  .x-follow-btn:hover {
+    background: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 代表的発信見出し */
+  .x-recent-heading {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 0 0 32px;
+    font-weight: 700;
+  }
+
+  /* タイムライン埋め込みラッパー */
+  /* 代表的な発信 見出し */
+  .x-recent-heading {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 56px 0 32px;
+    font-weight: 700;
+  }
+
+  /* 個別ツイート3カラムグリッド */
+  .x-tweets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  .x-tweet-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    min-height: 200px;
+  }
+  .x-tweet-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(16, 37, 66, 0.12);
+  }
+  .x-tweet-item .twitter-tweet {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+  @media (max-width: 960px) {
+    .x-tweets-grid { grid-template-columns: 1fr; max-width: 560px; }
+  }
+  .x-timeline-wrapper .twitter-timeline { margin: 0 !important; }
+
+  /* 下部CTA */
+  .x-bottom-cta {
+    text-align: center;
+    margin: 0;
+  }
+  .x-bottom-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--gold);
+    transition: all 0.3s;
+  }
+  .x-bottom-link:hover {
+    color: var(--gold);
+    border-bottom-color: var(--navy);
+  }
+
+  @media (max-width: 600px) {
+    .x-profile-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 28px 24px;
+    }
+    .x-profile-name { justify-content: center; }
+    .x-tweets-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+
+<!-- ===== Latest from note ===== -->
+<section class="latest-note" id="latest-note">
+  <div class="container">
+    <span class="section-tag">LATEST FROM NOTE</span>
+    <h2 class="section-title">note記事</h2>
+    <p class="section-lead">
+      noteでは、政策・金融マクロ・国際情勢など、X以上に踏み込んだ長文での発信を行っています。<br>
+      最新記事をピックアップしてご紹介します。
+    </p>
+
+    <div class="note-carousel">
+      <button class="note-carousel-btn note-carousel-prev" aria-label="前の記事へ" type="button">‹</button>
+      <div class="note-carousel-track">
+        <a href="https://note.com/yoshimi_watanabe/n/n2ba361f4b84f" target="_blank" rel="noopener" class="note-thumb-card">
+          <div class="note-thumb-img">
+            <img src="https://assets.st-note.com/production/uploads/images/282667809/rectangle_large_type_2_0a6960315ae024044df3a81427b4550b.png?width=1280" alt="外貨準備を積み増しても、円は守れない" loading="lazy">
+            <span class="note-thumb-badge">note</span>
+          </div>
+          <div class="note-thumb-info">
+            <span class="note-thumb-date">2026.06.05</span>
+            <h4 class="note-thumb-title">外貨準備を積み増しても、円は守れない― 元金融担当大臣が解く、外為特会200兆円のカラクリと「円防衛の本丸」</h4>
+            <span class="note-thumb-cta">noteで読む →</span>
+          </div>
+        </a>
+
+        <a href="https://note.com/yoshimi_watanabe/n/n3a1a84b0b1e9" target="_blank" rel="noopener" class="note-thumb-card">
+          <div class="note-thumb-img">
+            <img src="https://assets.st-note.com/production/uploads/images/278568982/rectangle_large_type_2_99be32b00c37ee2c2bc2ec36d337a333.png?width=1280" alt="ウォーシュFRBのヒール＆トー金融政策" loading="lazy">
+            <span class="note-thumb-badge">note</span>
+          </div>
+          <div class="note-thumb-info">
+            <span class="note-thumb-date">2026.05.22</span>
+            <h4 class="note-thumb-title">【5分解説】ウォーシュFRBの「ヒール＆トー金融政策」― 住宅ローン・新NISA・ガソリン代にどう影響するか？</h4>
+            <span class="note-thumb-cta">noteで読む →</span>
+          </div>
+        </a>
+
+        <a href="https://note.com/yoshimi_watanabe/n/na10b5c187658" target="_blank" rel="noopener" class="note-thumb-card">
+          <div class="note-thumb-img">
+            <img src="https://assets.st-note.com/production/uploads/images/274224721/rectangle_large_type_2_fa26d3755eb1ce24cdd303993b66a6ec.png?width=1280" alt="GW外遊は『観光』ではない、これは資源戦争への出陣だ" loading="lazy">
+            <span class="note-thumb-badge">note</span>
+          </div>
+          <div class="note-thumb-info">
+            <span class="note-thumb-date">2026.05.08</span>
+            <h4 class="note-thumb-title">GW外遊は『観光』ではない、これは資源戦争への出陣だ ― 高市内閣の外遊を読み解く</h4>
+            <span class="note-thumb-cta">noteで読む →</span>
+          </div>
+        </a>
+      </div>
+      <button class="note-carousel-btn note-carousel-next" aria-label="次の記事へ" type="button">›</button>
+    </div>
+
+    <p class="note-bottom-cta">
+      <a href="https://note.com/yoshimi_watanabe" target="_blank" rel="noopener" class="note-bottom-link">
+        noteアカウントで全記事を見る →
+      </a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .latest-note { background: #fff; }
+  .latest-note .section-lead { text-align: left; }
+
+  /* noteカルーセル */
+  .note-carousel {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto 40px;
+    padding: 0 56px;
+  }
+  .note-carousel-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 12px 0 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #41c9b4 var(--gray-100);
+  }
+  .note-carousel-track::-webkit-scrollbar { height: 8px; }
+  .note-carousel-track::-webkit-scrollbar-track { background: var(--gray-100); border-radius: 4px; }
+  .note-carousel-track::-webkit-scrollbar-thumb { background: #41c9b4; border-radius: 4px; }
+
+  .note-thumb-card {
+    flex: 0 0 calc(33.333% - 16px);
+    scroll-snap-align: start;
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 18px rgba(16, 37, 66, 0.06);
+  }
+  .note-thumb-card:hover {
+    box-shadow: 0 20px 44px rgba(65, 201, 180, 0.2);
+    transform: translateY(-4px);
+    border-color: #41c9b4;
+  }
+  .note-thumb-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--gray-100);
+  }
+  .note-thumb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .note-thumb-card:hover .note-thumb-img img {
+    transform: scale(1.06);
+  }
+  .note-thumb-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #41c9b4;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 4px 11px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+    border-radius: 4px;
+  }
+  .note-thumb-info {
+    padding: 20px 24px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .note-thumb-date {
+    font-family: 'Noto Serif JP', serif;
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .note-thumb-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    color: var(--navy);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 700;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .note-thumb-cta {
+    color: #41c9b4;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 14px;
+    border-top: 1px solid var(--gray-300);
+    transition: color 0.3s;
+  }
+  .note-thumb-card:hover .note-thumb-cta {
+    color: var(--navy);
+  }
+
+  .note-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid var(--gray-300);
+    border-radius: 50%;
+    font-size: 24px;
+    color: #41c9b4;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(16, 37, 66, 0.1);
+    line-height: 1;
+    padding-bottom: 2px;
+  }
+  .note-carousel-btn:hover {
+    background: #41c9b4;
+    color: #fff;
+    border-color: #41c9b4;
+  }
+  .note-carousel-prev { left: 4px; }
+  .note-carousel-next { right: 4px; }
+
+  .note-bottom-cta { text-align: center; margin: 0; }
+  .note-bottom-link {
+    display: inline-block;
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 14px 32px;
+    border: 1px solid #41c9b4;
+    transition: all 0.3s;
+  }
+  .note-bottom-link:hover {
+    background: #41c9b4;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(65, 201, 180, 0.25);
+  }
+
+  @media (max-width: 960px) {
+    .note-thumb-card { flex: 0 0 calc(50% - 12px); }
+    .note-carousel { padding: 0 40px; }
+  }
+  @media (max-width: 600px) {
+    .note-thumb-card { flex: 0 0 calc(100% - 8px); }
+    .note-carousel { padding: 0 24px; }
+    .note-carousel-btn { width: 38px; height: 38px; font-size: 20px; }
+    .note-carousel-prev { left: 0; }
+    .note-carousel-next { right: 0; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.note-carousel').forEach(function(carousel) {
+    var track = carousel.querySelector('.note-carousel-track');
+    var prevBtn = carousel.querySelector('.note-carousel-prev');
+    var nextBtn = carousel.querySelector('.note-carousel-next');
+    if (!track || !prevBtn || !nextBtn) return;
+    function getStep() {
+      var card = track.querySelector('.note-thumb-card');
+      if (!card) return 380;
+      var style = window.getComputedStyle(track);
+      var gap = parseInt(style.gap) || 24;
+      return card.offsetWidth + gap;
+    }
+    prevBtn.addEventListener('click', function() {
+      track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', function() {
+      track.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+  });
+</script>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-inner">
+    <span class="section-tag">CONTACT</span>
+    <img src="images/yoshimi_contact.jpg" alt="渡辺喜美" class="contact-img">
+    <h2 class="section-title">ご相談・お問い合わせ</h2>
+    <p class="contact-lead">
+      講演ご依頼、顧問・アドバイザリー契約、寄稿・取材、その他ご相談は<br>
+      下記フォームよりお気軽にお寄せください。<br>
+      内容を確認の上、3営業日以内にご返信いたします。
+    </p>
+    <a href="https://forms.gle/ozKMtHFQnjqf8UHw6" class="contact-btn" target="_blank" rel="noopener">お問い合わせフォームへ</a>
+    <p class="contact-note">
+      ※ 報道・取材のお問い合わせも同フォームよりお願いいたします。<br>
+      ※ 内容によっては、ご相談をお受けできない場合がございます。あらかじめご了承ください。
+    </p>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="logo" style="font-size:18px;">渡辺喜美 <span>YOSHIMI WATANABE</span></div>
+    <div class="social-links">
+      <a href="https://x.com/WTNBYSM443" target="_blank" rel="noopener">𝕏 @WTNBYSM443</a>
+      <a href="https://forms.gle/ozKMtHFQnjqf8UHw6" target="_blank" rel="noopener">Contact</a>
+      <a href="#profile">Profile</a>
+      <a href="#service">Services</a>
+      <a href="#media">Media</a>
+    </div>
+    <div class="legal-links">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <span class="legal-sep">·</span>
+      <a href="privacy.html#terms">利用規約</a>
+      <span class="legal-sep">·</span>
+      <a href="privacy.html#contact">お問い合わせ窓口</a>
+    </div>
+    <p class="copy">© 渡辺喜美 OFFICIAL — Yoshimi Watanabe. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // ===== Scroll Reveal Animation =====
+  (function() {
+    var revealSelectors = '.section-tag, .section-title, .section-lead, .value-card, .issue-item, .plan-card, .service-sub, .media-thumb-card, .app-category, .media-card, .faq-item, .process-step, .article-card, .app-sub-heading, .quote-banner, .service-photo-banner, .plans-heading, .plans-lead, .plans-note, .other-heading, .other-lead, .expectation-note, .articles-header, .articles-count, .career-list, .clips-note, .profile-photo, .profile-text';
+
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll(revealSelectors).forEach(function(el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll(revealSelectors).forEach(function(el) {
+      if (el.closest('.hero')) return;
+      el.classList.add('reveal');
+      var parent = el.parentElement;
+      if (parent) {
+        var sameKindSiblings = Array.from(parent.children).filter(function(child) {
+          return child.matches && child.matches(revealSelectors);
+        });
+        var idx = sameKindSiblings.indexOf(el);
+        if (idx > 0 && idx < 10) {
+          el.style.transitionDelay = (idx * 0.08) + 's';
+        }
+      }
+      observer.observe(el);
+    });
+  })();
+
+  // JBpress記事カルーセル制御
+  document.querySelectorAll('.articles-carousel').forEach(function(carousel) {
+    var track = carousel.querySelector('.articles-track');
+    var prevBtn = carousel.querySelector('.carousel-prev');
+    var nextBtn = carousel.querySelector('.carousel-next');
+    if (!track) return;
+
+    function getStep() {
+      var card = track.querySelector('.article-card, .article-link');
+      if (!card) return 320;
+      var style = window.getComputedStyle(track);
+      var gap = parseInt(style.gap) || 20;
+      return card.offsetWidth + gap;
+    }
+
+    function updateButtons() {
+      var maxScroll = track.scrollWidth - track.clientWidth;
+      if (prevBtn) prevBtn.style.opacity = track.scrollLeft <= 4 ? '0.3' : '1';
+      if (nextBtn) nextBtn.style.opacity = track.scrollLeft >= maxScroll - 4 ? '0.3' : '1';
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function() {
+      track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+    });
+    if (nextBtn) nextBtn.addEventListener('click', function() {
+      track.scrollBy({ left: getStep(), behavior: 'smooth' });
+    });
+    track.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+    updateButtons();
+  });
+</script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
