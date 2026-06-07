@@ -1170,7 +1170,7 @@
     .hero h1 { font-size: 36px; line-height: 1.4; }
     .hero-img { width: 100%; }
     .hero-img img {
-      object-position: 62% 20%;
+      object-position: 38% 20%;
       opacity: 0.95;
       max-width: none;
       margin: 0;
@@ -1223,9 +1223,9 @@
   }
 
   @media (max-width: 600px) {
-    /* Hero写真：本人の顔全体が見えるよう右寄り調整 */
+    /* Hero写真：顔を画面中央に表示（PCと同じ object-position） */
     .hero-img img {
-      object-position: 65% 22%;
+      object-position: 38% 22%;
       opacity: 1;
     }
     .hero-img::before {
